@@ -8,7 +8,7 @@
            background-color:#99ffcc;
            width: 700px;
            margin: 0px auto;
-           height: 850;
+           height: 850px;
            padding-top: 10px; 
            }
 
@@ -38,7 +38,7 @@ footer{
       text-align: center;
       clear :both;
       margin: 0 auto;
-      padding: auto;
+      padding: 3px;
       }
 
       nav ul{
@@ -70,7 +70,7 @@ header h4{
          }
 
 
-image{
+img{
      width:400px;
      height:auto;
      padding-left: 60px;
