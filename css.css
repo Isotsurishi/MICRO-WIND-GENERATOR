@@ -52,17 +52,17 @@ header h1{
          font-size: x-large;
          }
 
-header h2{
+body h2{
          text-align:center;
-         letter-spacing: 5px;
-         line-height: 30px;
+         letter-spacing: 0px;
+         line-height: 40px;        
+         font-size: 20px;
          }
 
-header h3{
-         text-align:center;
-         letter-spacing: 5px;
-         line-height: 40px;
-         font-weight: 250;
+body h3{
+         
+         letter-spacing: 0px;
+         line-height: 40px;         
          font-size: medium;
          }
 
@@ -70,6 +70,7 @@ header h4{
          text-align:center;
          letter-spacing: 5px;
          line-height: 40px;
+         font-weight: 250;
          }
 
 
