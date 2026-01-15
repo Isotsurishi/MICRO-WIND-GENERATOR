@@ -4,4 +4,4 @@
 
 ## 🌐 ホームページはこちら！
 
-[プロジェクトのWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+[試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
