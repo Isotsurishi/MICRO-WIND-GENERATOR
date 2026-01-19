@@ -2,6 +2,8 @@
 
 低風速でも発電可能な構造を目指す
 
+この試作品では入手が比較的簡単なソフトフェライトを使用
+
 ## 🌐 ホームページはこちら！
 
 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
