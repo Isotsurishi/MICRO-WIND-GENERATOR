@@ -5,7 +5,7 @@
 この試作品では入手が比較的簡単なソフトフェライトを使用
 
 🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
-
+　
  　
 Copilotに問い合わせた結果
 　
