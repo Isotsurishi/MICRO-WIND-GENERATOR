@@ -6,8 +6,8 @@
 
 🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 
-
-  　
+　
+ 　
 Copilotに問い合わせた結果
 　
 ## 🔍 コイルコア材質による発電量の比較（コアなし = 1.0）
