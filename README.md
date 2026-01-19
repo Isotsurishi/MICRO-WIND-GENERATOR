@@ -6,7 +6,7 @@
 
 🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 　
-　
+--------
 　
 Copilotに問い合わせた結果
 　
