@@ -18,6 +18,7 @@
 <br>
 実用化するには発電した電気を一度バッテリーに充電した後、出力するのが良いと考えています
 <br>
+<br>
 🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 <br>
 <br>
