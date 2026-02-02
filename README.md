@@ -2,6 +2,12 @@
 <br>
 低風速でも発電可能な構造を目指す
 <br><br>
+A compact hand-crank and micro wind generator designed for low-speed, low-cogging power generation.
+<br>
+This project explores magnetic circuit optimization, coil design, and core materials to improve efficiency and reduce torque ripple.
+<br>
+Currently under development with ongoing experiments and prototype testing.
+<br><br>
 発電機の構造はアキシャルギャップ型のコアコイルを使った単相交流発電機です
 <br>
 　１、コアにはアンテナ用フェライトロッドを使用しました
