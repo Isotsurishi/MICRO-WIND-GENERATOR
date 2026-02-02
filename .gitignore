@@ -1,0 +1,14 @@
+# OS が作る不要ファイル
+Thumbs.db
+.DS_Store
+
+# ログファイル
+*.log
+
+# 一時ファイル・バックアップ
+*.tmp
+*.bak
+
+# エディタの設定
+.vscode/
+.idea/
