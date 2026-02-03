@@ -1,12 +1,21 @@
 マイクロ風力（手回し）発電機の試作と実験記録
 <br>
-低風速でも発電可能な構造を目指す
+実用可能な、低風速でも発電可能な構造を目指す
 <br><br>
-A compact hand-crank and micro wind generator designed for low-speed, low-cogging power generation.
+<strong>Core‑Type Axial‑Gap Generator Project<strong>
 <br>
-This project explores magnetic circuit optimization, coil design, and core materials to improve efficiency and reduce torque ripple.
+I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.
 <br>
-Currently under development with ongoing experiments and prototype testing.
+This generator uses 12 coils and produces single‑phase AC.
+<br>
+I’m working on reducing cogging torque so it can generate power even with very weak airflow, like from a household fan.
+<br>
+Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.
+<br>
+However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
+<br>
+<br>
+🌐 [試作品のWebページを見る See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 <br><br>
 発電機の構造はアキシャルギャップ型のコアコイルを使った単相交流発電機です
 <br>
@@ -23,9 +32,6 @@ Currently under development with ongoing experiments and prototype testing.
 今回の実験で使用したフェライトロッドの特製は不明ですが、透磁性は良いが磁気飽和しやすいためにコギングが残ったと考えています
 <br>
 実用化するには発電した電気を一度バッテリーに充電した後、出力するのが良いと考えています
-<br>
-<br>
-🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 <br>
 <br>
 この試作品に至るまで
