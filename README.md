@@ -15,7 +15,7 @@ Right now I’m searching for suitable magnetic materials for the coil cores and
 However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
 <br>
 <br>
-🌐 [試作品のWebページを見る   See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+🌐 [試作品のWebページを見る　　　See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 <br><br>
 発電機の構造はアキシャルギャップ型のコアコイルを使った単相交流発電機です
 <br>
