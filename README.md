@@ -2,7 +2,7 @@
 <br>
 実用可能な、低風速でも発電可能な構造を目指す
 <br><br>
-<strong>Core‑Type Axial‑Gap Generator Project<strong>
+Core‑Type Axial‑Gap Generator Project
 <br>
 I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.
 <br>
