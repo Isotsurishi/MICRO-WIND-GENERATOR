@@ -10,7 +10,7 @@
 
 現在は、コイルのコア材やコギング抑制用の磁性体プレートに適した材料を探していますが、個人で入手できる材料には限界があり、開発の大きな課題となっています。
 
-🌐 [試作品のWebページを見る / See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 
 ---
 
@@ -55,7 +55,7 @@ I’m working on reducing cogging torque so it can generate power even with very
 Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.  
 However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
 
-🌐 [試作品のWebページを見る / See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+🌐 [See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 
 ---
 
