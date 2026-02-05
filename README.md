@@ -3,7 +3,7 @@
 
 ---
 
-## Core‑Type Axial‑Gap Generator Project（日本語）
+## Core‑Type Axial‑Gap Generator Project
 
 個人開発としては少し挑戦的かもしれませんが、実用的なマイクロ発電機の実現を目指して研究を進めています。  
 この発電機は 12 個のコイルを使用した単相交流発電機で、家庭用扇風機のような弱い風でも発電できるよう、コギングトルクの低減に取り組んでいます。
@@ -46,8 +46,6 @@
 
 ---
 
-# English Section
-
 ## Core‑Type Axial‑Gap Generator Project
 
 I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.  
@@ -56,6 +54,8 @@ I’m working on reducing cogging torque so it can generate power even with very
 
 Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.  
 However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
+
+🌐 [試作品のWebページを見る / See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 
 ---
 
@@ -73,6 +73,8 @@ I’m looking for the following types of magnetic powders:
 - Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
 
 If you know reliable suppliers, small‑lot vendors, or practical ways to obtain these materials, your advice would be greatly appreciated.
+
+---
 
 過去の実験の様子は Instagram にも掲載しています。  
 #モバイル風力発電機 #風力発電機プロトタイプ #家庭用風力発電機  
