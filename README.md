@@ -1,99 +1,78 @@
-マイクロ風力（手回し）発電機の試作と実験記録
-<br>
+マイクロ風力（手回し）発電機の試作と実験記録  
 実用可能な、低風速でも発電可能な構造を目指す
-<br><br>
-Core‑Type Axial‑Gap Generator Project
-<br>
-I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.
-<br>
-This generator uses 12 coils and produces single‑phase AC.
-<br>
+
+---
+
+## Core‑Type Axial‑Gap Generator Project（日本語）
+
+個人開発としては少し挑戦的かもしれませんが、実用的なマイクロ発電機の実現を目指して研究を進めています。  
+この発電機は 12 個のコイルを使用した単相交流発電機で、家庭用扇風機のような弱い風でも発電できるよう、コギングトルクの低減に取り組んでいます。
+
+現在は、コイルのコア材やコギング抑制用の磁性体プレートに適した材料を探していますが、個人で入手できる材料には限界があり、開発の大きな課題となっています。
+
+🌐 [試作品のWebページを見る / See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+
+---
+
+## 発電機の構造
+
+本試作品はアキシャルギャップ型のコアコイルを用いた単相交流発電機です。
+
+- コアにはアンテナ用フェライトロッドを使用  
+- アキシャル方向の位置決めにリング状ネオジム磁石の反発を利用  
+- コギング抑制のため、磁石とコイルの間に磁性体板を配置  
+- 磁石背面からの漏れ磁束を防ぐため、隣接磁石を磁性体で連結  
+- 負荷による逆起電力を抑えるため、全コイルを直列接続  
+
+今回使用したフェライトロッドは透磁率は良いものの磁気飽和しやすく、コギングが残る原因になったと考えています。  
+実用化する場合は、一度バッテリーに充電してから出力する方式が適していると判断しています。
+
+---
+
+## 磁性体粉末の入手について
+
+現在、コギングトルクをどこまで低減できるか検証するために、**粒径の揃った磁性体粉末**を用いた実験を行いたいと考えています。  
+しかし、個人で少量入手することが非常に難しく、プロジェクトの進行に大きな制約となっています。
+
+実験してみたい粉末材料は次の通りです。
+
+- ナノ結晶材粉末（高透磁率・低損失・高飽和磁束密度）  
+- アモルファス金属粉末  
+- 積層用純鉄粉末  
+- パーマロイ系、ケイ素鋼系などの軟磁性粉末  
+
+これらの材料を少量で入手できる方法や、信頼できる販売元をご存じの方がいれば、ぜひ情報をいただけると助かります。  
+個人開発では調達に限界があり、皆さまのお力添えをいただければ、次のステップに進むことができます。
+
+---
+
+# English Section
+
+## Core‑Type Axial‑Gap Generator Project
+
+I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.  
+This generator uses 12 coils and produces single‑phase AC.  
 I’m working on reducing cogging torque so it can generate power even with very weak airflow, like from a household fan.
-<br>
-Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.
-<br>
+
+Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.  
 However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
-<br>
-<br>
-🌐 [試作品のWebページを見る　　　See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
-<br><br>
-発電機の構造はアキシャルギャップ型のコアコイルを使った単相交流発電機です
-<br>
-　１、コアにはアンテナ用フェライトロッドを使用しました
-<br>
-　２、アキシャル側の位置決めにリング状のネオジム磁石の反発を利用しました
-<br>
-　３、コギングを抑制するために磁性体の板を磁石とコイルの間に配置しました
-<br>
-　４、磁石のコイルと反対側の面から漏れる磁気を防ぐために隣接する磁石を磁性体で繋げました
-<br>
-　５、負荷に応じて発生する逆起電力を小さくするためにコイルは全て直列に結線しました
-<br><br>
-今回の実験で使用したフェライトロッドの特製は不明ですが、透磁性は良いが磁気飽和しやすいためにコギングが残ったと考えています
-<br>
-実用化するには発電した電気を一度バッテリーに充電した後、出力するのが良いと考えています
-<br>
-<br>
-この試作品に至るまで
-<br>
-　コアの材料
-<br>
-　　SS400の丸棒
-<br>
-　　　　↓
-<br>
-　　純鉄の丸棒
-<br>
-　　　　↓
-<br>
-　　砂鉄　+　エポキシ樹脂
-<br>
-　　　　↓
-<br>
-　　アンテナ用フェライトロッド
-<br>
-　　　　↓
-<br>
-　コギング抑制板の材料
-<br>
-　　SPCC
-<br>
-　　　　↓
-<br>
-　　砂鉄　+　エポキシ樹脂
-<br>
-　　アンテナ用フェライトロッドを金槌で粉砕　+　エポキシ樹脂
-<br>
-<br>
-これまでの実験結果を考えると、コギングの材質は不導体、高等磁性、軟磁性体、磁気飽和し難い、振動等で壊れない強度を兼ね備えた材料が良いと思います
-<br>
-<br>
-その他の部品
-<br>
-　　1㎜のプラバンを購入、加工して作成（時間がかかる、精度が悪い）
-<br>
-　　　　↓
-<br>
-　　図面を引いて工場に依頼（時間がかかる、精度は良い、高額）
-<br>
-　　　　↓
-<br>
-　　３Dプリンターを購入（時間は早い、強度がそれほど強くない、精度もそれほど良くない）
-<br>
-<br>
-軸受、パイプの価格、加工のしやすさからΦ８のパイプとしましたが強度は有りません、あくまで試作用です
-<br>
-<br>
-このように実用化を目指してきたのですが、個人では材料の調達、加工非常に難しいという問題に直面しました
-<br><br>
-実験してみたい材料は
-<br>
-　ナノ結晶材　μr：10,000～100,000　　飽和磁束密度　Bs：1.2T　　損失：低い
-<br>
-　アモルファス金属　μr：10,000～100,000　　飽和磁束密度　Bs：1.5～1.6T　　損失：低い
-<br>
-　純鉄（積層）　μr：5,000～10,000　　飽和磁束密度　Bs：2.1T　　損失：低い
-<br>
-　その他、パーマロイ、ケイ素鋼等、色んな材料で実験してみたいのですが現状叶いません
-<br><br>
-残念ではありますが、今までの実験結果をもとに何か良い方法が無いか考えている状態です
+
+---
+
+## Request for Magnetic Powder Materials
+
+To further evaluate how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for forming custom soft‑magnetic composite cores.
+
+However, sourcing these materials in small quantities as an individual developer has been extremely challenging.
+
+I’m looking for the following types of magnetic powders:
+
+- Nanocrystalline powder (high μr, low loss, high Bs)  
+- Amorphous metal powder  
+- Pure iron powder (lamination‑grade)  
+- Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
+
+If you know reliable suppliers, small‑lot vendors, or practical ways to obtain these materials, your advice would be greatly appreciated.
+
+過去の実験の様子は Instagram にも掲載しています。  
+#モバイル風力発電機 #風力発電機プロトタイプ #家庭用風力発電機  
