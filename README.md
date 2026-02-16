@@ -41,8 +41,8 @@
 - 積層用純鉄粉末  
 - パーマロイ系、ケイ素鋼系などの軟磁性粉末  
 
-これらの材料を少量で入手できる方法や、信頼できる販売元をご存じの方がいれば、ぜひ情報をいただけると助かります。  
-個人開発では調達に限界があり、皆さまのお力添えをいただければ、次のステップに進むことができます。
+実験してみたかった材料の入手がかなわなかったので、再度、アンテナ用のフェライトロッドを通販で発注
+コギング抑制板の容積を増やしてコギングが更に減るか実験する予定です
 
 ---
 
@@ -72,7 +72,7 @@ I’m looking for the following types of magnetic powders:
 - Pure iron powder (lamination‑grade)  
 - Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
 
-If you know reliable suppliers, small‑lot vendors, or practical ways to obtain these materials, your advice would be greatly appreciated.
+Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I plan to experiment with increasing the volume of the cogging suppression plates to see if it further reduces cogging.
 
 ---
 
