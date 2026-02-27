@@ -1,5 +1,6 @@
-マイクロ風力（手回し）発電機の試作と実験記録  
-実用可能な、低風速でも発電可能な構造を目指す
+# マイクロ風力発電機
+
+家庭用扇風機の風でも発電できる、小型風力（手回し）発電機の試作と実験記録  
 
 ---
 
@@ -42,13 +43,26 @@
 - パーマロイ系、ケイ素鋼系などの軟磁性粉末  
 
 実験してみたかった材料の入手がかなわなかったので、再度、アンテナ用のフェライトロッドを通販で発注
-コギング抑制板の容積を増やしてコギングが更に減るか実験する予定です
+コギング抑制板の容積を増やしてコギングが更に減るか実験
 
 ![コギング抑制板の厚みを変更した試作部品](img/t6t13.JPG)
 
----
+フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定すると測定位置にもよりますが、２～７MΩの導体となっていました
 
-## Core‑Type Axial‑Gap Generator Project
+## ご支援・ご協力のお願い
+
+このプロジェクトは個人で開発・検証を行っています。  
+材料の調達や加工方法など、情報提供やアドバイスをいただけるととても助かります。  
+GitHubのIssueなどで、お気軽にご連絡ください！
+
+🌐 [GitHubのページを見る](https://github.com/Isotsurishi/MICRO-WIND-GENERATOR)
+
+---
+# MICRO-WIND-GENERATOR
+
+A compact axial-gap generator prototype designed for low-wind environments, including household fans.
+
+### Prototype Overview: Core-Type Axial-Gap Generator
 
 I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.  
 This generator uses 12 coils and produces single‑phase AC.  
@@ -61,7 +75,7 @@ However, there are real limits to what I can obtain or do on my own, and that’
 
 ---
 
-## Request for Magnetic Powder Materials
+## Seeking Magnetic Powder Materials
 
 To further evaluate how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for forming custom soft‑magnetic composite cores.
 
@@ -74,9 +88,25 @@ I’m looking for the following types of magnetic powders:
 - Pure iron powder (lamination‑grade)  
 - Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
 
-Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I plan to experiment with increasing the volume of the cogging suppression plates to see if it further reduces cogging.
+Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I'm also experimenting to see if increasing the volume of the cogging suppression plates will further reduce cogging.
+
+## Request for Support and Collaboration
+This project is being developed and tested independently.
+Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.
+Feel free to contact me via GitHub Issues!
+
+🌐 [See the GitHub webpage](https://github.com/Isotsurishi/MICRO-WIND-GENERATOR)
+
+---
 
 ---
 
 過去の実験の様子は Instagram にも掲載しています。  
-#モバイル風力発電機 #風力発電機プロトタイプ #家庭用風力発電機  
+#モバイル風力発電機 #風力発電機プロトタイプ #家庭用風力発電機
+
+
+You can also find past experiments on Instagram:  
+#MicroWindGenerator #WindTurbinePrototype #DIYWindPower
+
+注意：英文は翻訳機にて翻訳したもので、日本語の文章と全く同じではない可能性が有ります
+Note: Since I am not fluent in English, the above English text was translated using a translation tool. It may not be an exact match to the original Japanese.

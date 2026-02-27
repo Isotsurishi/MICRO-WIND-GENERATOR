@@ -31,6 +31,115 @@
                 <section>               
 
                         <article>
+
+                            <h3>前回の試作品でもコギングは減少できたが、更に減少させるためにコギング抑制板の容積を増やした</h3>  
+                            <br>
+                            <p>コギング抑制板の形状</p> 
+                            <p>　　前回　幅10mm　厚み6mm　全ての角はR0</p>
+                            <p>　　今回　幅14mm　厚み13mm　全ての角はR2</p>
+                            <br>
+                            <p>材料は前回同様アンテナ用フェライトロッドを砕いてエポキシ樹脂で固めた</p>
+                            <p>フェライトロッドは購入時の状態では不導体でしたが加工したことで通電するようになった</p>
+                            <p>測定した位置によって値は異なるが、大体2～7MΩ</p>
+                            <br>
+                            <p>　　　　軽い力でもLEDは光る（LED10個を直列に結線）</p>  
+                                <video src="video/video15.mp4" loop controls width="500"></video>
+                            <br>
+                            <br>
+                            <p>　　　垂直軸型　　負荷（LED12個）で18.2V発生</p>
+                                <video src="video/video11.mp4" controls width="500"></video>
+                            <br>
+                            <br>
+                            <p>　　　水平軸型　　負荷（LED35）個で59.8V発生</p>
+                                <video src="video/video12.mp4" controls width="500"></video>
+                            <br>
+                            <br>
+                            <p>　　　水平軸型　　負荷有で16.4V、無負荷で58.0V発生</p>
+                                <video src="video/video13.mp4" controls width="500"></video>
+                            <br>
+                            <br>
+                            <h2>ギヤ比　3:1　の手回しハンドルで発電してみた</h2>
+                            <br>
+                            <p>　　　手回しハンドル負荷有で18.5V発生</p>
+                                <video src="video/video14.mp4" loop controls width="500"></video>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>大まかな構造</h3> 
+                            <img src="img/bunkai.JPG"alt="分解した状態" width= "500">
+                            <br>
+                            <br>
+                            <br>
+                            <h3>結果</h3> 
+
+                            <div style="overflow-x:auto;">
+                              <table border="1">
+                                <tr><th>試作　</th><th> 垂直軸型(LED)　</th><th>水平軸型<br>(LED35個)　</th><th>水平軸型<br>(100V5W)　</th><th>水平軸型<br>(無負荷)　</th><th>手回し</tr></tr>
+                                <tr><td>今回</td><td>　18.2V(12個)</td><td>　59.8V</td><td>　16.4V</td><td>　58.0V</td><td>18.5V</td></tr>
+                                <tr><td>前回A</td><td>　20.7V(12個)</td><td>　　–</td><td>　19.7V</td><td>　37.9V</td><td>　–</td></tr>
+                                <tr><td>前回B</td><td>　36.0V(23個)</td><td>　　–</td><td>　35.3V</td><td>　87.5V</td><td>51.5V</td></tr>
+                              </table>
+                            </div>
+                            <br>
+                            
+                            <h5>考察</h5>
+                            <p>負荷の大小に関わらず、コギング抑制板で磁束は通りが良くなった</p>
+                            <br>
+                            <p>・無負荷、負荷が小さい場合</p>
+                            <p>　　逆起電力により発生する磁束は微々たるもの</p>
+                            <p>　　　　　　　↓</p>
+                            <p>　　発電電圧は高くなった</p>
+                            <br>
+                            <p>・負荷が大きい場合</p>
+                            <p>　　負荷に比例してコイル電流が増える</p>
+                            <p>　　　　　　　↓</p>
+                            <p>　　逆起電力により発生する磁束も負荷に比例して増える</p>
+                            <p>　　　　　　　↓</p>
+                            <p>　　コアが飽和に近づく、若しくは飽和する</p>
+                            <p>　　　　　　　↓</p>
+                            <p>　　有効インダクタンスが低下する</p>
+                            <p>　　　　　　　↓</p>
+                            <p>　　発電電圧が低くなった</p>
+                            <br>
+                            <p>　　発電量、発電時の負荷を想定し、それに合わせたコア、コギン<br>　　グ抑制板を検討する必要が有ると考えています</p>
+                            <p>　　他には、コギング抑制板は不導体であること、試作品では強度<br>　　や精度が悪かったので改善の必要が有ると考えています</p>
+                            <br>                            
+                            <h3>実用化に向けて</h3>
+                            <p>　無謀かもしれませんが、実用化を目指して検証を進めています</p>
+                            <p>　現時点での目標は、家庭用扇風機でスマホを充電できるくらいの<br>　発電量を発生させること</p>
+                            <p>　屋外では実験の条件を一定にできない、風洞設備も無いので「家<br>　庭用扇風機の風」という限られた条件で検証を進めています</p>
+                            <br>
+                            <h5>更に検証を進めるために</h5> 
+                            <p>　コア、コギング抑制板の材料の調達は個人では少量入手、加工、<br>　費用等問題山積です</p>
+                            <p>　個人でも入手可能な代用品、加工方法等情報を頂けると、とても<br>　助かります</p>
+                            <br>
+                            <p><strong>こちらのページ<a href="https://github.com/Isotsurishi/MICRO-WIND-GENERATOR" target="_blank">GitHubページ</a> も閲覧頂けると幸いです</strong></p>
+                            <br>
+                            <p>上記にもあるように、材料の調達ができないと</p>
+                            <p>　現行の装置ではネオジム磁石の磁束は多すぎる可能性が有るので<br>　フェライト磁石に替えてもそこそこの発電量が得られるか検証す<br>　ることくらいです</p>
+                           
+                            <br>
+                            <br>
+
+                          <h2>前回のコアとコギング抑制板(t6)と今回のコギング抑制板(t13)</h2>
+                          <img src="img/t6t13.JPG"alt="前回と今回のコギング抑制板" width= "500">
+                          <br><br><br><br>
+
+                          <p>磁束は鋭角に向きを変えることはできません、できるだけ大きなRを付けたいです</p>
+                          <h2>現行のコアとコギング抑制板</h2>
+                          <p>寸法や平面が出せなくてコアとコギング抑制板の接触面積が小さい</p>                         
+                          <embed src="img/A.pdf#zoom75" type="application/pdf" width="80%" height="250px" />
+                          <br><br><br>
+                          <h2>試してみたいコアとコギング抑制板の分割型</h2>
+                          <embed src="img/D.pdf#zoom75" type="application/pdf" width="80%" height="250px" />
+                          <br><br><br>
+                          <h2>試してみたいコアとコギング抑制板の一体型</h2>
+                          <embed src="img/E.pdf#zoom75" type="application/pdf"  width="80%" height="250px" />
+                          <br><br><br><br><br>
+
+
+                            <h5>ここから下は前回の実験結果そのままです</h5> 
+
                             <h2>軽い力でもLEDは光る（LED10個を直列に結線）</h2>  
                                 <video src="video/video01.mp4" loop controls width="500"></video>
                             <br>
