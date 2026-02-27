@@ -55,7 +55,6 @@
 材料の調達や加工方法など、情報提供やアドバイスをいただけるととても助かります。  
 GitHubのIssueなどで、お気軽にご連絡ください！
 
-🌐 [GitHubのページを見る](https://github.com/Isotsurishi/MICRO-WIND-GENERATOR)
 
 ---
 # MICRO-WIND-GENERATOR
@@ -95,7 +94,6 @@ This project is being developed and tested independently.
 Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.
 Feel free to contact me via GitHub Issues!
 
-🌐 [See the GitHub webpage](https://github.com/Isotsurishi/MICRO-WIND-GENERATOR)
 
 ---
 
