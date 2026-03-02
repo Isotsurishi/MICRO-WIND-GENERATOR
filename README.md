@@ -45,9 +45,39 @@
 実験してみたかった材料の入手がかなわなかったので、再度、アンテナ用のフェライトロッドを通販で発注
 コギング抑制板の容積を増やしてコギングが更に減るか実験
 
-![コギング抑制板の厚みを変更した試作部品](img/t6t13.JPG)
+
 
 フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定すると測定位置にもよりますが、２～７MΩの導体となっていました
+
+## フェライト磁石を使った場合の発電量を検証予定
+
+ｖ4.0の実験結果よりコアが磁気飽和、若しくはそれに近い状態になっていると推量
+そこで、現行のネオジム磁石Φ10t3をフェライト磁石Φ18t5に変更、コアが飽和、若しくはそれに近い状態になっていたのかを検証するとともに、フェライト磁石の可能性を検証する予定
+磁石以外は全て同じ条件とする
+
+現在使用しているネオジム磁石（Φ10×t3）を、フェライト磁石（Φ18×t5）に変更し、発電性能の違いを比較検証する予定
+以下は、両者の磁束密度および磁束量の目安を比較した表です。
+
+### 🔍 磁石の比較（ネオジム vs フェライト）
+
+| 項目 | ネオジム磁石 Φ10×t3 | フェライト磁石 Φ18×t5 |
+|------|----------------------|-------------------------|
+| 表面磁束密度（Br） | 約1.25 T | 約0.38 T |
+| 面積（断面積） | 約7.85×10⁻⁵ m² | 約2.54×10⁻⁴ m² |
+| 磁束（Φ） | 約9.8×10⁻⁵ Wb | 約9.7×10⁻⁵ Wb |
+
+![ネオジム磁石とフェライト磁石の比較](img/Φ18t5JPG)
+
+
+### 🔍 磁石の変更に伴い垂直軸型プロペラも変更
+
+![垂直軸型プロペラ](img/suiheiJPG)
+
+### 🔍 磁石の変更に伴い水平軸型プロペラも変更
+
+![水平軸型プロペラ](img/suityokuJPG)
+
+
 
 ## ご支援・ご協力のお願い
 
@@ -89,6 +119,27 @@ I’m looking for the following types of magnetic powders:
 
 Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I'm also experimenting to see if increasing the volume of the cogging suppression plates will further reduce cogging.
 
+
+### 🔧  Planned Evaluation of Power Generation Using Ferrite Magnets
+
+The current neodymium magnets (Φ10×t3) will be replaced with ferrite magnets (Φ18×t5) for performance comparison.  
+This plan is documented here as version 5.0.  
+After conducting the actual experiment, the results will be published as version 6.0.
+
+### 🔍 Magnet Comparison: Neodymium vs Ferrite
+
+| Item | Neodymium Magnet Φ10×t3 | Ferrite Magnet Φ18×t5 |
+|------|--------------------------|------------------------|
+| Surface Magnetic Flux Density (Br) | ~1.25 T | ~0.38 T |
+| Cross-sectional Area | ~7.85×10⁻⁵ m² | ~2.54×10⁻⁴ m² |
+| Magnetic Flux (Φ) | ~9.8×10⁻⁵ Wb | ~9.7×10⁻⁵ Wb |
+
+
+### 🔍 Vertical-Axis Propeller Updated with Magnet Change
+
+### 🔍 Horizontal-Axis Propeller Updated with Magnet Change
+
+
 ## Request for Support and Collaboration
 This project is being developed and tested independently.
 Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.
@@ -107,4 +158,5 @@ You can also find past experiments on Instagram:
 #MicroWindGenerator #WindTurbinePrototype #DIYWindPower
 
 注意：英文は翻訳機にて翻訳したもので、日本語の文章と全く同じではない可能性が有ります
-Note: Since I am not fluent in English, the above English text was translated using a translation tool. It may not be an exact match to the original Japanese.
+
+Note: The English text above was translated using a translation tool and may not exactly match the original Japanese.
