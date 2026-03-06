@@ -49,18 +49,8 @@
 
 フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定すると測定位置にもよりますが、２～７MΩの導体となっていました
 
-## フェライト磁石を使った場合の発電量を検証予定
 
-ｖ4.0の実験結果よりコアが磁気飽和、若しくはそれに近い状態になっていると推量<br>
-
-そこで、現行のネオジム磁石Φ10t3をフェライト磁石Φ18t5に変更、コアが飽和、若しくはそれに近い状態になっていたのかを検証するとともに、フェライト磁石の可能性を検証する予定<br>
-
-磁石、プロペラ以外は全て同じ条件とする
-
-現在使用しているネオジム磁石（Φ10×t3）を、フェライト磁石（Φ18×t5）に変更し、発電性能の違いを比較検証する予定
-以下は、両者の磁束密度および磁束量の目安を比較した表です。
-
-### 🔍 磁石の比較（ネオジム vs フェライト）
+## 磁石の比較（ネオジム vs フェライト）
 
 v6.0の結果より、扇風機の風でも電力をあまり使わないものであれば使えそうに感じましたが、さらに踏み込んだ検証をしてみたいです
 
@@ -125,7 +115,7 @@ I’m looking for the following types of magnetic powders:
 Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I'm also experimenting to see if increasing the volume of the cogging suppression plates will further reduce cogging.
 
 
-### 🔍 Comparison of Magnets (Neodymium vs Ferrite)
+## Comparison of Magnets (Neodymium vs Ferrite)
 Based on the results from version 6.0, it seems that if the device doesn’t consume much power, it could potentially run even with the airflow from a household fan. I’d like to take the testing a step further, but I’m unable to procure the cores or the cogging‑reduction plates.
 
 I also want to try using a more efficient propeller instead of the one I made myself.
