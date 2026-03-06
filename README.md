@@ -62,14 +62,17 @@
 
 ### 🔍 磁石の比較（ネオジム vs フェライト）
 
-| 項目 | ネオジム磁石 Φ10×t3 | フェライト磁石 Φ18×t5 |
-|------|----------------------|-------------------------|
-| 表面磁束密度（Br） | 約1.25 T | 約0.38 T |
-| 面積（断面積） | 約7.85×10⁻⁵ m² | 約2.54×10⁻⁴ m² |
-| 磁束（Φ） | 約9.8×10⁻⁵ Wb | 約9.7×10⁻⁵ Wb |
+v6.0の結果より、扇風機の風でも電力をあまり使わないものであれば使えそうに感じましたが、さらに踏み込んだ検証をしてみたいです
+
+しかし、コア、コギング抑制板の調達ができません
+
+プロペラも私が作ったものではなく、効率の良いものを使ってみたいです
+
+ホームページにも記載しましたが、材料の調達が叶わないと次の検証はできません
+
+残念ではありますが、暫くは何か良い方法が有るか検討します
 
 ![ネオジム磁石とフェライト磁石の比較](img/Φ18-t5.JPG)
-
 
 ### 🔍 磁石の変更に伴い垂直軸型プロペラも変更
 
@@ -122,20 +125,16 @@ I’m looking for the following types of magnetic powders:
 Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I'm also experimenting to see if increasing the volume of the cogging suppression plates will further reduce cogging.
 
 
-### 🔧  Planned Evaluation of Power Generation Using Ferrite Magnets
+### 🔍 Comparison of Magnets (Neodymium vs Ferrite)
+Based on the results from version 6.0, it seems that if the device doesn’t consume much power, it could potentially run even with the airflow from a household fan. I’d like to take the testing a step further, but I’m unable to procure the cores or the cogging‑reduction plates.
 
-The current neodymium magnets (Φ10×t3) will be replaced with ferrite magnets (Φ18×t5) for performance comparison.  
-This plan is documented here as version 5.0.  
-After conducting the actual experiment, the results will be published as version 6.0.
+I also want to try using a more efficient propeller instead of the one I made myself.
+
+As I mentioned on my website, without being able to obtain the necessary materials, I can’t proceed with the next round of testing.
+
+It’s disappointing, but for now I’ll take some time to think about whether there’s a good workaround.
 
 ### 🔍 Magnet Comparison: Neodymium vs Ferrite
-
-| Item | Neodymium Magnet Φ10×t3 | Ferrite Magnet Φ18×t5 |
-|------|--------------------------|------------------------|
-| Surface Magnetic Flux Density (Br) | ~1.25 T | ~0.38 T |
-| Cross-sectional Area | ~7.85×10⁻⁵ m² | ~2.54×10⁻⁴ m² |
-| Magnetic Flux (Φ) | ~9.8×10⁻⁵ Wb | ~9.7×10⁻⁵ Wb |
-
 
 ### 🔍 Vertical-Axis Propeller Updated with Magnet Change
 
