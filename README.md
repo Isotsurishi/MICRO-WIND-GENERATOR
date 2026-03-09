@@ -76,9 +76,10 @@
 
 ## ご支援・ご協力のお願い
 
-このプロジェクトは個人で開発・検証を行っています。  
-材料の調達や加工方法など、情報提供やアドバイスをいただけるととても助かります。  
-GitHubのIssueなどで、お気軽にご連絡ください！
+このプロジェクトは個人で開発・検証を行っています。
+恥ずかしながら、資金が不足しています。
+材料の調達や加工方法など、情報提供やアドバイスを無償でいただけるととても助かります。
+GitHubのIssueなどで、連絡頂けると幸いです。
 
 
 ---
@@ -157,8 +158,9 @@ It’s disappointing, but for now I’ll take some time to think about whether t
 ## Request for Support and Collaboration
 
 This project is being developed and tested independently.  
-Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.  
-Feel free to contact me through GitHub Issues!
+To be honest, I am currently short on funds.  
+Any information or advice regarding material sourcing or processing methods, provided free of charge, would be extremely helpful.  
+If you are willing to share your knowledge, please feel free to contact me through GitHub Issues.
 
 ---
 
