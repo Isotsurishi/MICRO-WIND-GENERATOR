@@ -82,60 +82,83 @@ GitHubのIssueなどで、お気軽にご連絡ください！
 
 
 ---
+
 # MICRO-WIND-GENERATOR
 
-A compact axial-gap generator prototype designed for low-wind environments, including household fans.
+A compact axial‑gap generator prototype designed for low‑wind environments, including airflow from household fans.
 
-### Prototype Overview: Core-Type Axial-Gap Generator
+### Prototype Overview: Core‑Type Axial‑Gap Generator
 
-I might be taking on something a bit ambitious, but I’m exploring the idea of creating a practical micro‑generator as an individual developer.  
-This generator uses 12 coils and produces single‑phase AC.  
-I’m working on reducing cogging torque so it can generate power even with very weak airflow, like from a household fan.
+This project may be a bit ambitious for an individual developer, but I’m working toward building a practical micro wind generator.  
+The generator uses 12 coils and produces single‑phase AC.  
+I’m focusing on reducing cogging torque so that it can generate power even with very weak airflow, such as from a household fan.
 
-Right now I’m searching for suitable magnetic materials for the coil cores and for the plates that help reduce cogging.  
-However, there are real limits to what I can obtain or do on my own, and that’s becoming a challenge as I try to move this project forward.
+Right now, I’m searching for suitable magnetic materials for the coil cores and for the plates used to reduce cogging.  
+However, there are real limits to what I can obtain or fabricate on my own, and this has become a challenge as I try to move the project forward.
 
 🌐 [See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
 
 ---
 
+## Generator Structure
+
+This prototype is a single‑phase AC generator that uses core coils in an axial‑gap configuration.
+
+- Ferrite antenna rods are used as the coil cores (exact material unknown)  
+- Axial positioning is maintained using the repulsive force of ring‑shaped neodymium magnets  
+- A magnetic plate is placed between the magnets and coils to help reduce cogging  
+- Adjacent magnets are connected with magnetic material to prevent flux leakage from the back side  
+- All coils are connected in series to reduce the reverse electromotive force caused by the load  
+
+The ferrite rods used in this prototype have good permeability but tend to saturate easily, which I believe is one of the reasons cogging remains.  
+For practical use, I think a system that charges a battery first and then outputs power would be more suitable.
+
+---
+
 ## Seeking Magnetic Powder Materials
 
-To further evaluate how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for forming custom soft‑magnetic composite cores.
+To better understand how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for making custom soft‑magnetic composite cores.
 
-However, sourcing these materials in small quantities as an individual developer has been extremely challenging.
+Unfortunately, obtaining these materials in small quantities as an individual developer has been very difficult.
 
-I’m looking for the following types of magnetic powders:
+I’m hoping to test the following types of magnetic powders:
 
 - Nanocrystalline powder (high μr, low loss, high Bs)  
 - Amorphous metal powder  
 - Pure iron powder (lamination‑grade)  
 - Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
 
-Due to difficulties obtaining the material I originally wanted to test, I reordered ferrite rods for antennas online. I'm also experimenting to see if increasing the volume of the cogging suppression plates will further reduce cogging.
+Since I couldn’t obtain the materials I originally wanted to test, I ordered ferrite antenna rods again.  
+I’m also experimenting to see whether increasing the volume of the cogging‑suppression plates will help reduce cogging further.
 
+---
 
-## Comparison of Magnets (Neodymium vs Ferrite)
-Based on the results from version 6.0, it seems that if the device doesn’t consume much power, it could potentially run even with the airflow from a household fan. I’d like to take the testing a step further, but I’m unable to procure the cores or the cogging‑reduction plates.
+## Improving Magnetic Flux Concentration in the Core
+
+I searched again for ferrite rods with a larger cross‑sectional area than the magnets, but I couldn’t find any.  
+So, I plan to run tests using neodymium magnets with a smaller cross‑sectional area (Φ6×t3).
+
+Based on the results from version 6.0, it seems that if the device doesn’t require much power, it might be able to run even with the airflow from a household fan.  
+I would like to continue testing, but I’m currently unable to obtain the core materials or the cogging‑reduction plates.
 
 I also want to try using a more efficient propeller instead of the one I made myself.
 
-As I mentioned on my website, without being able to obtain the necessary materials, I can’t proceed with the next round of testing.
-
+As mentioned on my website, without the necessary materials, I can’t move on to the next round of testing.  
 It’s disappointing, but for now I’ll take some time to think about whether there’s a good workaround.
 
 ### 🔍 Magnet Comparison: Neodymium vs Ferrite
 
-### 🔍 Vertical-Axis Propeller Updated with Magnet Change
+### 🔍 Vertical‑Axis Propeller Updated with Magnet Change
 
-### 🔍 Horizontal-Axis Propeller Updated with Magnet Change
+### 🔍 Horizontal‑Axis Propeller Updated with Magnet Change
 
+---
 
 ## Request for Support and Collaboration
-This project is being developed and tested independently.
-Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.
-Feel free to contact me via GitHub Issues!
 
+This project is being developed and tested independently.  
+Any information, advice, or suggestions regarding material sourcing or processing methods would be greatly appreciated.  
+Feel free to contact me through GitHub Issues!
 
 ---
 
