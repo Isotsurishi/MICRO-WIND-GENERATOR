@@ -53,11 +53,11 @@
 
 水平軸型　　負荷（LED10個）で16.7V発生
 
-![Φ6t3のネオジム磁石](video/video41)
+![実験動画](video/video41.gif)
 
 水平軸型　　負荷有で1.4V、無負荷で16.0V発生
 
-![Φ6t3のネオジム磁石](video/video42)
+![実験動画](video/video42.gif)
 
 結果
 
