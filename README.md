@@ -53,11 +53,12 @@
 
 水平軸型　　負荷（LED10個）で16.7V発生
 
-![実験動画](video/video41.gif)
+▶ [動画を見る（video41.mp4）](video/video41.mp4)
 
 水平軸型　　負荷有で1.4V、無負荷で16.0V発生
 
-![実験動画](video/video42.gif)
+▶ [動画を見る（video41.mp4）](video/video42.mp4)
+
 
 結果
 
