@@ -49,30 +49,25 @@
 
 フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定すると測定位置にもよりますが、２～７MΩの導体となっていました
 
+## 磁束をコアに集中させるためにΦ6t3のネオジム磁石で検証
 
-## 磁束がコアに集まりやすくするために
+水平軸型　　負荷（LED10個）で16.7V発生
 
-コアに使う磁石よりより大きい面積のフェライトの棒を再度探したのですが見つからなかったので、磁石の面積の小さいのネオジム磁石（Φ6t3）にて検証を予定しています
+![Φ6t3のネオジム磁石](video/video41)
 
-現行の試作品より太いコアの材料が見つからないと強い磁石による検証はできそうもないです
+水平軸型　　負荷有で1.4V、無負荷で16.0V発生
 
-プロペラも私が作ったものではなく、効率の良いものを使ってみたいです
+![Φ6t3のネオジム磁石](video/video42)
 
-ホームページにも記載しましたが、材料の調達が叶わないと次の検証はできません
+結果
 
-残念ではありますが、暫くは何か良い方法が有るか検討します
+　　・LED10個を直列に結線：16.7V　　　　　↓
 
-![Φ6t3のネオジム磁石、磁石から磁束が漏れない板（砂鉄+エポキシ樹脂）、フェライトロッド](img/Φ6-t3.JPG)
+　　・100V5W球を結線：1.4V
 
-### 🔍 磁石の変更に伴い垂直軸型プロペラも変更
+　磁束がコアに集中しても発電量が少なければ意味が無い
 
-![垂直軸型プロペラ](img/suihei.JPG)
-
-### 🔍 磁石の変更に伴い水平軸型プロペラも変更
-
-![水平軸型プロペラ](img/suityoku.JPG)
-
-
+　そこで、コイル周りは最終の形態で磁石を替え、8kΩ、4kΩ、2kΩ・・・と替え、発生する電圧を測定して、どの組み合わせが良いのか検討する予定です
 
 ## ご支援・ご協力のお願い
 
@@ -85,31 +80,36 @@
 GitHubのIssueなどで、連絡頂けると幸いです。
 
 
+
+
 ---
 
 # MICRO-WIND-GENERATOR
 
-A compact axial‑gap generator prototype designed for low‑wind environments, including airflow from household fans.
+A compact axial-gap generator prototype designed for low-wind environments, including airflow from household fans.
 
-### Prototype Overview: Core‑Type Axial‑Gap Generator
+---
 
-This project may be a bit ambitious for an individual developer, but I’m working toward building a practical micro wind generator.  
-The generator uses 12 coils and produces single‑phase AC.  
-I’m focusing on reducing cogging torque so that it can generate power even with very weak airflow, such as from a household fan.
+## Core-Type Axial-Gap Generator
 
-Right now, I’m searching for suitable magnetic materials for the coil cores and for the plates used to reduce cogging.  
-However, there are real limits to what I can obtain or fabricate on my own, and this has become a challenge as I try to move the project forward.
+This project may be a bit ambitious for an individual developer, but I am working toward building a practical micro wind generator.  
+The generator uses 12 coils and produces single-phase AC.  
+I am focusing on reducing cogging torque so that it can generate power even with very weak airflow, such as from a household fan.
 
-🌐 [See the prototype webpage](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
+Currently, I am searching for suitable magnetic materials for the coil cores and for the plates used to reduce cogging.  
+However, there are real limits to what I can obtain or fabricate on my own, and this has become a major challenge in the development process.
+
+🌐 **Prototype webpage:**  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 ---
 
 ## Generator Structure
 
-This prototype is a single‑phase AC generator that uses core coils in an axial‑gap configuration.
+This prototype is a single-phase AC generator that uses core coils in an axial-gap configuration.
 
 - Ferrite antenna rods are used as the coil cores (exact material unknown)  
-- Axial positioning is maintained using the repulsive force of ring‑shaped neodymium magnets  
+- Axial positioning is maintained using the repulsive force of ring-shaped neodymium magnets  
 - A magnetic plate is placed between the magnets and coils to help reduce cogging  
 - Adjacent magnets are connected with magnetic material to prevent flux leakage from the back side  
 - All coils are connected in series to reduce the reverse electromotive force caused by the load  
@@ -121,40 +121,36 @@ For practical use, I think a system that charges a battery first and then output
 
 ## Seeking Magnetic Powder Materials
 
-To better understand how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for making custom soft‑magnetic composite cores.
+To better understand how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for making custom soft-magnetic composite cores.
 
 Unfortunately, obtaining these materials in small quantities as an individual developer has been very difficult.
 
-I’m hoping to test the following types of magnetic powders:
+I am hoping to test the following types of magnetic powders:
 
 - Nanocrystalline powder (high μr, low loss, high Bs)  
 - Amorphous metal powder  
-- Pure iron powder (lamination‑grade)  
-- Other soft‑magnetic powders such as permalloy or silicon‑steel based materials  
+- Pure iron powder (lamination-grade)  
+- Other soft-magnetic powders such as permalloy or silicon-steel based materials  
 
-Since I couldn’t obtain the materials I originally wanted to test, I ordered ferrite antenna rods again.  
-I’m also experimenting to see whether increasing the volume of the cogging‑suppression plates will help reduce cogging further.
+Since I could not obtain the materials I originally wanted to test, I ordered ferrite antenna rods again.  
+I am also experimenting to see whether increasing the volume of the cogging-suppression plates will help reduce cogging further.
+
+When measuring the resistance of ferrite rods crushed and mixed with epoxy resin, the resulting material showed 2–7 MΩ depending on the measurement point.
 
 ---
 
-## Improving Magnetic Flux Concentration in the Core
+## Verification Using Φ6 mm × 3 mm Neodymium Magnets to Concentrate Magnetic Flux into the Core
 
-I searched again for ferrite rods with a larger cross‑sectional area than the magnets, but I couldn’t find any.  
-So, I plan to run tests using neodymium magnets with a smaller cross‑sectional area (Φ6×t3).
+**Horizontal-axis test results**
 
-Based on the results from version 6.0, it seems that if the device doesn’t require much power, it might be able to run even with the airflow from a household fan.  
-I would like to continue testing, but I’m currently unable to obtain the core materials or the cogging‑reduction plates.
+- 10 LEDs in series: **16.7 V**  
+- 100 V / 5 W incandescent bulb: **1.4 V**  
+- No-load voltage: **16.0 V**
 
-I also want to try using a more efficient propeller instead of the one I made myself.
+Even if the magnetic flux is successfully concentrated into the core, it is meaningless if the overall power generation remains low.
 
-As mentioned on my website, without the necessary materials, I can’t move on to the next round of testing.  
-It’s disappointing, but for now I’ll take some time to think about whether there’s a good workaround.
-
-### 🔍 Magnet Comparison: Neodymium vs Ferrite
-
-### 🔍 Vertical‑Axis Propeller Updated with Magnet Change
-
-### 🔍 Horizontal‑Axis Propeller Updated with Magnet Change
+To investigate this further, I plan to keep the coil section in its final configuration and replace only the magnets.  
+I will then measure the generated voltage while varying the load resistance (8 kΩ, 4 kΩ, 2 kΩ, …) to determine which combination provides the best performance.
 
 ---
 
@@ -167,15 +163,13 @@ If you are willing to share your knowledge, please feel free to contact me throu
 
 ---
 
----
+## Past Experiments
 
-過去の実験の様子は Instagram にも掲載しています。  
-#モバイル風力発電機 #風力発電機プロトタイプ #家庭用風力発電機
-
-
-You can also find past experiments on Instagram:  
+Past experiments are also posted on Instagram.  
 #MicroWindGenerator #WindTurbinePrototype #DIYWindPower
 
-注意：英文は翻訳機にて翻訳したもので、日本語の文章と全く同じではない可能性が有ります
+---
 
-Note: The English text above was translated using a translation tool and may not exactly match the original Japanese.
+## Note
+
+The English text in this README was translated from Japanese and may not be a perfect one-to-one match with the original meaning.
