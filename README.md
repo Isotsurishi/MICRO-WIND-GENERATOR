@@ -1,176 +1,134 @@
 # マイクロ風力発電機
 
-家庭用扇風機の風でも発電できる、小型風力（手回し）発電機の試作と実験記録  
+家庭用扇風機のような弱い風でも発電できる、小型風力（手回し）発電機の試作と実験記録です
 
----
+## コア付きアキシャルギャップ型発電機
 
-## コア有りアキシャルギャップ型
+個人開発としてはちょっと無謀な挑戦かもしれませんが、実用的なマイクロ発電機の実現を目指して検証を進めています。本発電機は12個のコイルを用いた単相交流発電機で、弱い風でも発電できるようコギングトルクの低減に重点を置いています
 
-個人開発としては少し挑戦的かもしれませんが、実用的なマイクロ発電機の実現を目指して研究を進めています。  
-この発電機は 12 個のコイルを使用した単相交流発電機で、家庭用扇風機のような弱い風でも発電できるよう、コギングトルクの低減に取り組んでいます。
+現在は、コイルのコア材やコギング抑制用磁性体プレートに適した材料を探索していますが、個人で入手できる材料には限界があり、大きな開発課題となっています
 
-現在は、コイルのコア材やコギング抑制用の磁性体プレートに適した材料を探していますが、個人で入手できる材料には限界があり、開発の大きな課題となっています。
-
-🌐 [試作品のWebページを見る](https://isotsurishi.github.io/MICRO-WIND-GENERATOR/)
-
----
+試作品のWebページ:  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 ## 発電機の構造
 
-本試作品はアキシャルギャップ型のコアコイルを用いた単相交流発電機です。
+本試作品は、アキシャルギャップ型のコア付きコイルを用いた単相交流発電機です
 
-- コアにはアンテナ用フェライトロッド（材質の詳細は不明）を使用  
-- アキシャル方向の位置決めにリング状ネオジム磁石の反発を利用  
-- コギング抑制のため、磁石とコイルの間に磁性体板を配置  
-- 磁石背面からの漏れ磁束を防ぐため、隣接磁石を磁性体で連結  
-- 負荷による逆起電力を抑えるため、全コイルを直列接続  
+- コアにはアンテナ用フェライトロッド（材質の詳細は不明）を使用
+- アキシャル方向の位置決めにリング状ネオジム磁石の反発力を利用
+- コギング抑制のため、磁石とコイルの間に磁性体の板を配置
+- 磁石背面からの漏れ磁束を防ぐため、隣接する磁石を磁性体で連結
+- 負荷による逆起電力の影響を抑えるため、全コイルを直列接続
 
-今回使用したフェライトロッドは透磁率は良いものの磁気飽和しやすく、コギングが残る原因になったと考えています。  
-実用化する場合は、一度バッテリーに充電してから出力する方式が適していると判断しています。
-
----
+今回使用したフェライトロッドは透磁率は高いものの磁気飽和しやすく、コギングが残る一因になっていると考えています。実用化を考えると、一度バッテリーに充電してから出力する方式が適していると考えています
 
 ## 磁性体粉末の入手について
 
-現在、コギングトルクをどこまで低減できるか検証するために、**粒径の揃った磁性体粉末**を用いた実験を行いたいと考えています。  
-しかし、個人で少量入手することが非常に難しく、プロジェクトの進行に大きな制約となっています。
+コギングトルクをどこまで低減できるか検証するため、粒径の揃った磁性体粉末を用いたソフト磁性複合材の実験を行いたいと考えていますが、個人で少量を入手することが非常に難しく、開発の大きな制約となっています
 
-実験してみたい粉末材料は次の通りです。
+試してみたい粉末材料:
+- ナノ結晶材粉末（高透磁率・低損失・高飽和磁束密度）
+- アモルファス金属粉末
+- 積層用純鉄粉末
+- パーマロイ系・ケイ素鋼系などの軟磁性粉末
 
-- ナノ結晶材粉末（高透磁率・低損失・高飽和磁束密度）  
-- アモルファス金属粉末  
-- 積層用純鉄粉末  
-- パーマロイ系、ケイ素鋼系などの軟磁性粉末  
+希望する材料が入手できなかったため、代替としてアンテナ用フェライトロッドを再度通販で購入、コギング抑制板の容積を増やすことでコギングがさらに低減できるかどうかを検証しています
 
-実験してみたかった材料の入手がかなわなかったので、再度、アンテナ用のフェライトロッドを通販で発注
-コギング抑制板の容積を増やしてコギングが更に減るか実験
+フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定したところ、測定位置によってばらつきはあるものの、概ね2～7MΩ程度の高抵抗となっていました。
 
+## 磁石部の最新5種類による、負荷抵抗と出力電圧の関係検証
 
+これまでに作成した磁石部のうち、最新の5種類をそれぞれ組み替え、負荷抵抗と出力電圧の関係を検証しました
 
-フェライトロッドを砕いてエポキシ樹脂で固めた材料の抵抗を測定すると測定位置にもよりますが、２～７MΩの導体となっていました
+回転数は360 r.p.m.、720 r.p.m.を目安として測定しています（時計の秒針を見ながら手で回転させているため、回転数には多少の誤差があります）
 
-## 磁束をコアに集中させるためにΦ6t3のネオジム磁石で検証
+使用した負荷抵抗:
+10 kΩ、6.8 kΩ、4.7 kΩ、2.1 kΩ、1 kΩ、470 Ω、270 Ω、200 Ω
 
-水平軸型　　負荷（LED10個）で16.7V発生
+プロペラ:
+全て同じものを使用
 
-▶ [動画を見る（video41.mp4）](video/video41.mp4)
-
-水平軸型　　負荷有で1.4V、無負荷で16.0V発生
-
-▶ [動画を見る（video42.mp4）](video/video42.mp4)
-
-
-結果
-
-　　・LED10個を直列に結線：16.7V
-
-　　・100V5W球を結線：1.4V
-
-　磁束がコアに集中しても発電量が少なければ意味が無い
-
-　そこで、コイル周りは最終の形態で磁石を替え、8kΩ、4kΩ、2kΩ・・・と替え、発生する電圧を測定して、どの組み合わせが良いのか検討する予定です
+詳細な測定結果はWebページに掲載しています。
 
 ## ご支援・ご協力のお願い
 
-このプロジェクトは個人で開発・検証を行っています。
+この検証は私一人で行っており、恥ずかしい話ですが資金に余裕がありません
 
-恥ずかしながら、資金が不足しています。
+材料の調達方法や加工方法など、情報提供やアドバイスを無償でいただけると大変助かります。GitHubのIssueなどでご連絡いただけると幸いです
 
-材料の調達や加工方法など、情報提供やアドバイスを無償でいただけるととても助かります。
+## 過去の実験
 
-GitHubのIssueなどで、連絡頂けると幸いです。
-
-
-
+過去の実験内容はInstagramにも掲載しています
+#マイクロ風力発電機　#モバイル風力発電機　#家庭用風力発電機　#自作発電機　
 
 ---
 
 # MICRO-WIND-GENERATOR
-
 A compact axial-gap generator prototype designed for low-wind environments, including airflow from household fans.
 
----
+## Axial-Gap Generator with Ferrite-Core Coils
 
-## Core-Type Axial-Gap Generator
+This project is an ambitious undertaking for a solo developer, but I am steadily working toward a practical micro wind generator. The prototype uses 12 coils and produces single-phase AC, with a major focus on minimizing cogging torque so that power can be generated even under very weak airflow and low rotational speeds.
 
-This project may be a bit ambitious for an individual developer, but I am working toward building a practical micro wind generator.  
-The generator uses 12 coils and produces single-phase AC.  
-I am focusing on reducing cogging torque so that it can generate power even with very weak airflow, such as from a household fan.
+I am currently exploring suitable magnetic materials for both the coil cores and the cogging-suppression plates. However, the range of materials that can be sourced in small quantities by an individual is limited, which has become a significant challenge in the development process.
 
-Currently, I am searching for suitable magnetic materials for the coil cores and for the plates used to reduce cogging.  
-However, there are real limits to what I can obtain or fabricate on my own, and this has become a major challenge in the development process.
-
-🌐 **Prototype webpage:**  
+Prototype webpage:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
-
----
 
 ## Generator Structure
 
-This prototype is a single-phase AC generator that uses core coils in an axial-gap configuration.
+This prototype is a single-phase AC generator using ferrite-core coils arranged in an axial-gap configuration.
 
-- Ferrite antenna rods are used as the coil cores (exact material unknown)  
-- Axial positioning is maintained using the repulsive force of ring-shaped neodymium magnets  
-- A magnetic plate is placed between the magnets and coils to help reduce cogging  
-- Adjacent magnets are connected with magnetic material to prevent flux leakage from the back side  
-- All coils are connected in series to reduce the reverse electromotive force caused by the load  
+- Ferrite antenna rods are used as the coil cores (exact material unknown)
+- Axial positioning is maintained using magnetic repulsion between ring-shaped neodymium magnets
+- A magnetic plate is placed between the magnets and coils to help reduce cogging torque
+- Adjacent magnets are linked with magnetic material to suppress flux leakage from the back side
+- All coils are connected in series to reduce the reverse electromotive force under load
 
-The ferrite rods used in this prototype have good permeability but tend to saturate easily, which I believe is one of the reasons cogging remains.  
-For practical use, I think a system that charges a battery first and then outputs power would be more suitable.
-
----
+The ferrite rods used here offer high permeability but saturate relatively easily, which likely contributes to the remaining cogging torque. For practical applications, a system that charges a battery first and then outputs power is expected to be more suitable.
 
 ## Seeking Magnetic Powder Materials
 
-To better understand how much cogging torque can be reduced, I would like to experiment with **magnetic powders with controlled particle size**, suitable for making custom soft-magnetic composite cores.
+To further investigate how much cogging torque can be reduced, I would like to experiment with soft-magnetic composite materials made from powders with controlled particle size.
 
-Unfortunately, obtaining these materials in small quantities as an individual developer has been very difficult.
+Unfortunately, obtaining such powders in small quantities as an individual developer has proven extremely difficult.
 
-I am hoping to test the following types of magnetic powders:
+Materials I would like to test include:
 
-- Nanocrystalline powder (high μr, low loss, high Bs)  
-- Amorphous metal powder  
-- Pure iron powder (lamination-grade)  
-- Other soft-magnetic powders such as permalloy or silicon-steel based materials  
+- Nanocrystalline powder (high permeability, low loss, high saturation flux density)
+- Amorphous metal powder
+- Pure iron powder for laminated structures
+- Other soft-magnetic powders such as permalloy-based or silicon-steel-based materials
 
-Since I could not obtain the materials I originally wanted to test, I ordered ferrite antenna rods again.  
-I am also experimenting to see whether increasing the volume of the cogging-suppression plates will help reduce cogging further.
+Since I was unable to obtain these materials, I purchased additional ferrite antenna rods and am currently testing whether increasing the volume of the cogging-suppression plates can further reduce cogging.
 
-When measuring the resistance of ferrite rods crushed and mixed with epoxy resin, the resulting material showed 2–7 MΩ depending on the measurement point.
+When measuring the resistance of ferrite rods that were crushed and mixed with epoxy resin, the resulting composite showed 2–7 MΩ, depending on the measurement location.
 
----
+## Relationship Between Load Resistance and Output Voltage
+Using the five latest magnet-assembly designs
 
-## Verification Using Φ6 mm × 3 mm Neodymium Magnets to Concentrate Magnetic Flux into the Core
+I tested the five most recent magnet assemblies by swapping them into the generator and measuring how the output voltage varied with different load resistances.
 
-**Horizontal-axis test results**
+Measurements were taken at approximately 360 r.p.m. and 720 r.p.m.  
+(The rotor was turned by hand while watching a clock’s second hand, so some error is expected.)
 
-- 10 LEDs in series: **16.7 V**  
-- 100 V / 5 W incandescent bulb: **1.4 V**  
-- No-load voltage: **16.0 V**
+### Load Resistors Used
+10 kΩ, 6.8 kΩ, 4.7 kΩ, 2.1 kΩ, 1 kΩ, 470 Ω, 270 Ω, 200 Ω
 
-Even if the magnetic flux is successfully concentrated into the core, it is meaningless if the overall power generation remains low.
+### Propeller
+The same propeller was used for all tests.
 
-To investigate this further, I plan to keep the coil section in its final configuration and replace only the magnets.  
-I will then measure the generated voltage while varying the load resistance (8 kΩ, 4 kΩ, 2 kΩ, …) to determine which combination provides the best performance.
-
----
+### Detailed Results
+Please refer to the data tables and graphs on the project webpage.
 
 ## Request for Support and Collaboration
 
-This project is being developed and tested independently.  
-To be honest, I am currently short on funds.  
-Any information or advice regarding material sourcing or processing methods, provided free of charge, would be extremely helpful.  
-If you are willing to share your knowledge, please feel free to contact me through GitHub Issues.
+This project is being developed independently, and my resources are limited. Any information or advice regarding material sourcing or processing methods would be greatly appreciated.
 
----
+If you are willing to share your knowledge, please feel free to contact me through GitHub Issues.
 
 ## Past Experiments
 
 Past experiments are also posted on Instagram.  
-#MicroWindGenerator #WindTurbinePrototype #DIYWindPower
-
----
-
-## Note
-
-The English text in this README was translated from Japanese and may not be a perfect one-to-one match with the original meaning.
+#マイクロ風力発電機 #モバイル風力発電機 #家庭用風力発電機 #自作発電機
