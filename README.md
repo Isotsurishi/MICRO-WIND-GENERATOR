@@ -49,7 +49,19 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 プロペラ:
 全て同じものを使用
 
-詳細な測定結果はWebページに掲載しています。
+詳細な測定結果はWebページに掲載しています
+
+## 実用化の可能性と展望
+
+Release 9 の実測値を見ると、弱い風でも少しずつ発電が始まることが確認できました
+
+まだ USB などを直接動かせるほどの出力ではありませんが、小さなバッテリーにいったん蓄電して使う方式なら、実用に近づく可能性があります
+
+コギングをもう少し減らせれば、さらに低い風速でも回り始めるはずです
+
+材料や磁気回路を工夫することで、電圧もまだ伸びる余地があります
+
+小型で弱風でも動く発電機は市販品にほとんど無いため、ゆっくりでも改良を続ければ、役に立つものになると思っています
 
 ## ご支援・ご協力のお願い
 
@@ -121,6 +133,17 @@ The same propeller was used for all tests.
 
 ### Detailed Results
 Please refer to the data tables and graphs on the project webpage.
+
+## Practical Potential and Future Prospects
+
+Based on the measurements from Release 9, the generator begins producing power even under weak airflow.
+The output is not yet strong enough to power USB devices directly, but storing the energy in a small battery first could make practical use possible.
+
+If cogging torque can be reduced further, the generator should start rotating at even lower wind speeds.
+There is still room for improvement in voltage output through better materials and magnetic design.
+
+Compact generators that work in very low wind are rare on the market,
+so steady improvements may eventually lead to something genuinely useful.
 
 ## Request for Support and Collaboration
 
