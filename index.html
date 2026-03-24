@@ -108,20 +108,20 @@
 <h3>抵抗値–電圧グラフ</h3>
 
 <p><strong>全データセット（360 & 720 rpm）</strong></p>
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/all_datasets.png" width="600">
+<img src="img/all_datasets.png" width="600">
 
 <p><strong>360 rpm のみ</strong></p>
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/rpm_360.png" width="600">
+<img src="img/rpm_360.png" width="600">
 
 <p><strong>720 rpm のみ</strong></p>
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/rpm_720.png" width="600">
+<img src="img/rpm_720.png" width="600">
 
 <p><strong>磁石ごとの比較（360 vs 720 rpm）</strong></p>
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/NdFeB6_360_vs_NdFeB6_720.png" width="600">
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/NdFeB10_360_vs_NdFeB10_720.png" width="600">
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/NdFeB16ep_360_vs_NdFeB16ep_720.png" width="600">
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/NdFeB16no_360_vs_NdFeB16no_720.png" width="600">
-<img src="https://isotsurishi.github.io/MICRO-WIND-GENERATOR/img/Ferrite_360_vs_Ferrite_720.png" width="600">
+<img src="img/NdFeB6_360_vs_NdFeB6_720.png" width="600">
+<img src="img/NdFeB10_360_vs_NdFeB10_720.png" width="600">
+<img src="img/NdFeB16ep_360_vs_NdFeB16ep_720.png" width="600">
+<img src="img/NdFeB16no_360_vs_NdFeB16no_720.png" width="600">
+<img src="img/Ferrite_360_vs_Ferrite_720.png" width="600">
 
 
 <h3>抵抗値 vs 電力（360 rpm）</h3>
@@ -199,7 +199,38 @@
                             <br>
                             <p>　ここまで試作、検証をしてきましたが一人での試作、検証には限<br>　界を感じ始めています</p>
                             <br>
+                            <br>
 
+                            
+<h5>上記実測値を元に、この試作品の可能性をAIが推測した内容をグラフも含め、以下に記します</h5>
+<p>（回転数と電圧がほぼ比例する前提で、コイル抵抗や機械損失は一定と仮定）</p>
+<h3>抵抗値 vs 電圧（1500 rpm）</h3>
+<img src="img/1500rpm_voltage.png" width="600">
+
+<h3>抵抗値 vs 電力（1500 rpm）</h3>
+<img src="img/1500rpm_output.png" width="600">
+<br>
+<br>
+<h3>1500r.p.m.での出力を（ネオジム磁石Φ10t3を参考に）1Wとすると</h3>
+<p>整流・DC-DC・充電ロスを考慮すると、バッテリーには0.4～0.6W充電可能</p>
+<p>・小さめのLEDライトをじわじわ点灯、若しくは充電</p>
+<P>・小容量バッテリーをゆっくり充電（非常灯用）</P>
+<br>
+<br>
+<h3>ギヤ比10：1の手回しにした場合</h3>
+<P>2～3Wの出力は充分現実的な範囲と考えられます（回転数と電圧がほぼ比例する前提で、コイル抵抗や機械損失は一定と仮定）</P>
+<p>試作品では回転半径30mmのハンドル、ギヤ比3:1でしたが、回転時の負荷は軽かった</p>
+<p>・LEDランタン（1～2W）をしっかり点灯</p>
+<p>・スマホに「ちょい足し充電」（5V×0.3～0.5Aを短時間）</p>
+<p>・ラジオ・小型スピーカー・センサー類</p>
+<br>
+<h3>コイルと反対側の磁石の面をヨークで繋ぐことで出力が大きくなったことより</h3>
+<p>理論的には、Φ16の磁石にΦ10と同等のヨークを用いて磁束漏れを抑えられれば、Φ10の約1.5倍の出力が期待できます</p>
+<p>（現在のΦ16は磁束漏れによりΦ10より低い出力でしたが、
+　ヨークを最適化すればΦ10の1.5倍が期待できます）</p>
+
+                            <br>
+                            <br>
                             <h3>関連動画について</h3>
                             <p>インスタグラムに過去の動画を投稿していますので興味のある方はご覧ください</p>
                             <p>　#モバイル風力発電機　#マイクロ風力発電機　#家庭用風力発電機<br>　でよく似た画像が見つかると思います</p>
