@@ -156,12 +156,6 @@ The main requirement was that the generator must work within the range of experi
 - Axial gap maintained by repulsion between ring-shaped neodymium magnets
 - All materials are easy to obtain (antenna ferrite rods, iron sand, epoxy resin)
 
-Internal structure  
-<img src="img/bunkai-t13.JPG" width="500">
-
-Assembled  
-<img src="img/kumitateji.jpg" width="500">
-
 # Experimental Environment
 
 - No wind tunnel — used a household electric fan
