@@ -36,7 +36,7 @@
 <img src="img/bunkai-t13.JPG" alt="分解した状態" width="500">
 
 組み立て時
-<img src="img/kumitateji.jpg" alt="磁石部" width="500">
+<img src="img/kumitateji.JPG" alt="磁石部" width="500">
 
 # 実験環境
 
