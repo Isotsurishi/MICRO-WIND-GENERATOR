@@ -116,6 +116,12 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 GitHub issuesにて連絡頂ければ幸いです
 
+## 英語表記について
+
+私は英語が苦手です
+英文は翻訳機にて翻訳しているので、正確かどうか私には判断できません
+ご了承願います　
+
 ## 過去の実験
 
 過去の実験内容はInstagramにも掲載しています
@@ -237,6 +243,13 @@ However, obtaining small quantities as an individual is difficult and is current
 If you can provide information about materials or processing methods, even non-commercially, it would be greatly appreciated.
 
 Please contact me via GitHub Issues.
+
+# About the English Version
+
+I am not very good at English.
+Since I rely on translation tools, I cannot judge whether the English sentences are accurate.
+Thank you for your understanding.
+Please translate this into English as well, because I may have trouble when I receive messages in English.
 
 # Past Experiments
 
