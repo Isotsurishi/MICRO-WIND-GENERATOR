@@ -1,8 +1,13 @@
 # マイクロ風力発電機
 
-非常時にスマホや12V機器を充電できる発電機の実用化を目指しました
+非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています
 
 条件としては、個人でも実験できる範囲で家庭用扇風機の「強」の風でも発電するものです
+
+特に、非常時の電源確保を目的とした小型風力発電機としての実用性を重視しています。
+
+試作品の詳細ページ（WEB版）:  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 # 構想
 
@@ -44,9 +49,6 @@
 - プロペラは扇風機の大きさに合わせた（大きすぎても風が当たらない）
 - 試作品の強度、精度が充分ではなくギャップが均一でない
 - コギング抑制板は、フェライトロッドを粉砕したものをエポキシ樹脂固めたもので、透磁率は低い
-
-試作品のWebページ:  
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 # 実験結果（Release9）
 
@@ -129,11 +131,22 @@ GitHub issuesにて連絡頂ければ幸いです
 過去の実験内容はInstagramにも掲載しています
 #マイクロ風力発電機　#モバイル風力発電機　#家庭用風力発電機　#自作発電機　
 
+
 # Micro Wind Generator
 
-This project aims to develop a small wind generator that can charge smartphones or 12V devices during emergencies.
+This project is being developed with potential commercialization in mind,
+aiming to create a small wind generator capable of charging smartphones
+and 12V devices during emergencies.
 
-The main requirement was that the generator must work within the range of experiments an individual can perform — specifically, it should generate power even with the “strong” setting of a household electric fan.
+The main requirement is that the generator must operate within the range of
+experiments an individual can perform — specifically, it should generate power
+even with the “strong” setting of a household electric fan.
+
+## Prototype Web Page
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
+
+## Prototype Web Page
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 # Concept
 
@@ -170,9 +183,6 @@ The main requirement was that the generator must work within the range of experi
 - Propeller size matched to the fan (too large and wind won’t hit it)
 - Prototype has limited strength and precision, so the gap is not perfectly uniform
 - Cogging-reduction plate is made from crushed ferrite rods mixed with epoxy, so permeability is low
-
-Project page:  
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
 # Experimental Results (Release 9)
 
