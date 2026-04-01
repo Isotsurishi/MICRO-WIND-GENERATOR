@@ -145,9 +145,6 @@ even with the “strong” setting of a household electric fan.
 ## Prototype Web Page
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
 
-## Prototype Web Page
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
-
 # Concept
 
 ## Normal use: vertical-axis wind turbine on a balcony
