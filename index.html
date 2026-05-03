@@ -31,19 +31,30 @@
                 <section>               
 
                         <article>
-                            <h3>試作品を作成して発電量の検証してきたのですが</h3>  
-                            <p>磁石とコギング抑制板の条件を変えれば簡単にそこそこの発電量が得られると考えていたのですが、それほど良い結果が得られませんでした</p> 
-                            <p>そこで、現状手元にある試作品で確認できる範囲で抵抗と電圧の関係について検証してみました</p>
+
+                            <h3>コアの長さを23mm、60mmの2種類で発電量を検証</h3>
+                            <p>弱い風でも発電できるものを目指しているので「<strong>家庭用扇風機の強の風で回り始める</strong>」ことを条件に試作品の設定をしています</p>
+                            <p>コイル両端4mmは固定のためにコイルは巻いていないのでコイルの範囲は15㎜と52㎜</p>
+                            <p>コイルにはφ0.4のポリウレタン線を使用し、2種類とも9重巻きとしました（手巻きなのでバラツキ有り）</p> 
+                            <p>コイル一個当たり　15㎜÷φ0.4×9重＝337.5　330巻を目標</p> 
+                            <p>コイル一個当たり　52㎜÷φ0.4×9重＝1170　1170巻を目標</p> 
+                            <p>コイルはすべて直列に結線し、ダイオードブリッジで直流にしました</p> 
+                            <p>コイル12個を直列に結線した時のポリウレタン線の常温での抵抗値の実測値は</p>
+                            <p>コア23㎜：19.9Ω</p>
+                            <p>コア60㎜：68.9Ω</p>
+                            <p>ダイオード：1N4007　4個</p>
                             <br>
+
                             <h3>磁石の種類　　　コイルと反対側にヨーク　　ヨークからの磁気</h3>                            
                             <p>ネオジム磁石</p>  
                             <p>　Φ6t3　　　　　　砂鉄+エポキシ樹脂　　　　　少し有り</p>                          
                             <p>　Φ10t3　　　　　　　　SS400　　　　　　　　ほぼ無し</p>
-                            <p>　Φ16t2.5　　　　砂鉄+エポキシ樹脂　　　　　少し有り</p>
+                            <p>　Φ16t2.5　　　　　　　SS400　　　　　　　　ほぼ無し</p>
                             <p>　Φ16t2.5　　　　　　　　無し　　　　　　　　　有り</p> 
                             <p>フェライト磁石</p>                         
-                            <p>　Φ18t5　　　　　　砂鉄+エポキシ樹脂　　　　　少し有り</p>  
+                            <p>　Φ18t5　　　　　　　　SS400　　　　　　　　ほぼ無し</p>  
                             <br>
+
                             <h3>回転数</h3>
                             <p>360r.p.m.、720r.p.m.</p>
                             <p>　ギヤ比3:1の手回しで時計の秒針に目視で合わす</p>
@@ -52,188 +63,348 @@
                             <h3>磁石とコギング抑制板（コア）の距離</h3>                            
                             <p>　Φ6t3以外は扇風機の強の風だけでプロペラが回り始める距離</p>
                             <p>　Φ6t3は風だけで回り始めないが、回り続けることができる距離</p>
+                            <table>
+  <caption>磁石とコギング抑制板の距離（mm）</caption>
+  <thead>
+    <tr>
+      <th>条件</th>
+      <th>Neo6</th>
+      <th>Neo10</th>
+      <th>Neo16</th>
+      <th>Neo16</th>
+      <th>Ferrite19</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Core 23mm（360/720rpm 共通）</td>
+      <td>2.5</td>
+      <td>6</td>
+      <td>2.5</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Core 60mm（360/720rpm 共通）</td>
+      <td>2.5</td>
+      <td>4.5</td>
+      <td>2.5</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
                             <br>
 
-                            <h3>結果</h3>                             
+                            <h3>結果</h3> 
+                            
+                           <table>
+  <caption>Core 23mm, 360rpm, Coil R = 19.9Ω</caption>
+  <thead>
+    <tr>
+      <th>Resistance (Ω)</th>
+      <th>Neo6 SandIron</th>
+      <th>Neo10 SS400</th>
+      <th>Neo16 No Yoke</th>
+      <th>Neo16 SS400</th>
+      <th>Ferrite19 SS400</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>9910.0</td><td>0.2017</td><td>2.386</td><td>1.656</td><td>2.598</td><td>1.645</td></tr>
+    <tr><td>6740.0</td><td>0.1964</td><td>2.327</td><td>1.612</td><td>2.498</td><td>1.551</td></tr>
+    <tr><td>4745.0</td><td>0.1723</td><td>2.278</td><td>1.592</td><td>2.476</td><td>1.486</td></tr>
+    <tr><td>2128.0</td><td>0.1314</td><td>2.263</td><td>1.486</td><td>2.428</td><td>1.398</td></tr>
+    <tr><td>990.0</td><td>0.1251</td><td>2.115</td><td>1.394</td><td>2.362</td><td>1.318</td></tr>
+    <tr><td>473.4</td><td>0.1053</td><td>2.084</td><td>1.279</td><td>2.236</td><td>1.277</td></tr>
+    <tr><td>267.7</td><td>0.0937</td><td>2.051</td><td>1.202</td><td>2.138</td><td>1.234</td></tr>
+    <tr><td>197.3</td><td>0.0723</td><td>1.923</td><td>1.194</td><td>2.057</td><td>1.158</td></tr>
+    <tr><td>102.4</td><td>0.0635</td><td>1.667</td><td>1.082</td><td>1.823</td><td>1.03</td></tr>
+    <tr><td>46.4</td><td>0.0324</td><td>1.324</td><td>0.802</td><td>1.406</td><td>0.789</td></tr>
+    <tr><td>22.8</td><td>0.0201</td><td>0.995</td><td>0.5657</td><td>1.001</td><td>0.5397</td></tr>
+    <tr><td>10.6</td><td>0.0097</td><td>0.5102</td><td>0.3072</td><td>0.5376</td><td>0.2987</td></tr>
+  </tbody>
+</table>
+ 
+<br>
 
-<h3>抵抗値 vs 電圧（360 rpm）</h3>
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th>抵抗値[Ω]</th>
-    <th>NdFeB6</th>
-    <th>NdFeB10</th>
-    <th>NdFeB16ep</th>
-    <th>NdFeB16no</th>
-    <th>Ferrite</th>
-  </tr>
-
-  <tr><td>10000</td><td>3.8</td><td>20.0</td><td>18.4</td><td>12.9</td><td>8.8</td></tr>
-  <tr><td>6800</td><td>3.6</td><td>19.3</td><td>16.9</td><td>12.8</td><td>8.4</td></tr>
-  <tr><td>4700</td><td>3.2</td><td>18.4</td><td>16.4</td><td>12.2</td><td>8.0</td></tr>
-  <tr><td>2100</td><td>2.8</td><td>16.2</td><td>13.9</td><td>10.8</td><td>6.8</td></tr>
-  <tr><td>1000</td><td>2.1</td><td>11.8</td><td>9.9</td><td>7.4</td><td>4.8</td></tr>
-  <tr><td>470</td><td>1.3</td><td>6.7</td><td>5.7</td><td>4.4</td><td>2.9</td></tr>
-  <tr><td>270</td><td>0.85</td><td>4.1</td><td>3.5</td><td>2.7</td><td>1.8</td></tr>
-  <tr><td>200</td><td>0.65</td><td>3.1</td><td>2.6</td><td>2.0</td><td>1.3</td></tr>
+<table>
+  <caption>Core 23mm, 720rpm, Coil R = 19.9Ω</caption>
+  <thead>
+    <tr>
+      <th>Resistance (Ω)</th>
+      <th>Neo6 SandIron</th>
+      <th>Neo10 SS400</th>
+      <th>Neo16 No Yoke</th>
+      <th>Neo16 SS400</th>
+      <th>Ferrite19 SS400</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>9910.0</td><td>0.831</td><td>5.692</td><td>4.186</td><td>6.11</td><td>3.96</td></tr>
+    <tr><td>6740.0</td><td>0.806</td><td>5.664</td><td>4.083</td><td>6.098</td><td>3.912</td></tr>
+    <tr><td>4745.0</td><td>0.752</td><td>5.484</td><td>4.05</td><td>5.986</td><td>3.874</td></tr>
+    <tr><td>2128.0</td><td>0.713</td><td>5.423</td><td>3.986</td><td>5.602</td><td>3.798</td></tr>
+    <tr><td>990.0</td><td>0.652</td><td>5.173</td><td>3.845</td><td>5.598</td><td>3.602</td></tr>
+    <tr><td>473.4</td><td>0.632</td><td>5.139</td><td>3.716</td><td>5.386</td><td>3.442</td></tr>
+    <tr><td>267.7</td><td>0.5483</td><td>4.871</td><td>3.498</td><td>5.182</td><td>3.332</td></tr>
+    <tr><td>197.3</td><td>0.5236</td><td>4.712</td><td>3.394</td><td>5.046</td><td>3.104</td></tr>
+    <tr><td>102.4</td><td>0.4476</td><td>3.998</td><td>2.852</td><td>4.546</td><td>2.723</td></tr>
+    <tr><td>46.4</td><td>0.2943</td><td>2.912</td><td>2.016</td><td>3.08</td><td>1.901</td></tr>
+    <tr><td>22.8</td><td>0.1875</td><td>1.772</td><td>1.212</td><td>1.853</td><td>1.153</td></tr>
+    <tr><td>10.6</td><td>0.0996</td><td>0.904</td><td>0.627</td><td>0.948</td><td>0.5876</td></tr>
+  </tbody>
 </table>
 
 <br>
 
-<h3>抵抗値 vs 電圧（720 rpm）</h3>
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th>抵抗値[Ω]</th>
-    <th>NdFeB6</th>
-    <th>NdFeB10</th>
-    <th>NdFeB16ep</th>
-    <th>NdFeB16no</th>
-    <th>Ferrite</th>
-  </tr>
-
-  <tr><td>10000</td><td>8.8</td><td>41.5</td><td>35.0</td><td>27.6</td><td>18.5</td></tr>
-  <tr><td>6800</td><td>8.3</td><td>37.6</td><td>33.7</td><td>26.4</td><td>18.0</td></tr>
-  <tr><td>4700</td><td>7.9</td><td>36.4</td><td>31.5</td><td>24.2</td><td>15.6</td></tr>
-  <tr><td>2100</td><td>5.7</td><td>25.5</td><td>22.3</td><td>17.6</td><td>11.6</td></tr>
-  <tr><td>1000</td><td>3.5</td><td>14.8</td><td>12.7</td><td>9.9</td><td>6.5</td></tr>
-  <tr><td>470</td><td>1.9</td><td>7.7</td><td>6.5</td><td>5.1</td><td>3.4</td></tr>
-  <tr><td>270</td><td>1.1</td><td>4.8</td><td>3.8</td><td>2.9</td><td>1.9</td></tr>
-  <tr><td>200</td><td>0.8</td><td>3.3</td><td>2.8</td><td>2.2</td><td>1.4</td></tr>
+<table>
+  <caption>Core 60mm, 360rpm, Coil R = 68.9Ω</caption>
+  <thead>
+    <tr>
+      <th>Resistance (Ω)</th>
+      <th>Neo6 SandIron</th>
+      <th>Neo10 SS400</th>
+      <th>Neo16 No Yoke</th>
+      <th>Neo16 SS400</th>
+      <th>Ferrite19 SS400</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>9910.0</td><td>1.621</td><td>11.23</td><td>7.52</td><td>10.58</td><td>6.28</td></tr>
+    <tr><td>6740.0</td><td>1.56</td><td>10.85</td><td>7.32</td><td>10.53</td><td>6.01</td></tr>
+    <tr><td>4745.0</td><td>1.468</td><td>10.52</td><td>7.28</td><td>10.13</td><td>5.77</td></tr>
+    <tr><td>2128.0</td><td>1.334</td><td>10.39</td><td>7.03</td><td>10.05</td><td>5.55</td></tr>
+    <tr><td>990.0</td><td>1.302</td><td>9.62</td><td>6.03</td><td>9.14</td><td>5.081</td></tr>
+    <tr><td>473.4</td><td>1.078</td><td>7.65</td><td>5.067</td><td>7.4</td><td>4.073</td></tr>
+    <tr><td>267.7</td><td>0.794</td><td>5.934</td><td>3.645</td><td>5.497</td><td>3.058</td></tr>
+    <tr><td>197.3</td><td>0.691</td><td>4.722</td><td>3.017</td><td>4.456</td><td>2.486</td></tr>
+    <tr><td>102.4</td><td>0.3984</td><td>2.734</td><td>1.742</td><td>2.615</td><td>1.437</td></tr>
+    <tr><td>46.4</td><td>0.2046</td><td>1.326</td><td>0.91</td><td>1.241</td><td>0.694</td></tr>
+    <tr><td>22.8</td><td>0.1023</td><td>0.651</td><td>0.4406</td><td>0.6096</td><td>0.3434</td></tr>
+    <tr><td>10.6</td><td>0.0472</td><td>0.2997</td><td>0.2015</td><td>0.2812</td><td>0.1581</td></tr>
+  </tbody>
 </table>
 
 <br>
+
+<table>
+  <caption>Core 60mm, 720rpm, Coil R = 68.9Ω</caption>
+  <thead>
+    <tr>
+      <th>Resistance (Ω)</th>
+      <th>Neo6 SandIron</th>
+      <th>Neo10 SS400</th>
+      <th>Neo16 No Yoke</th>
+      <th>Neo16 SS400</th>
+      <th>Ferrite19 SS400</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>9910.0</td><td>4.086</td><td>22.9</td><td>15.44</td><td>22.5</td><td>13.26</td></tr>
+    <tr><td>6740.0</td><td>3.945</td><td>22.53</td><td>15.02</td><td>21.23</td><td>13.01</td></tr>
+    <tr><td>4745.0</td><td>3.836</td><td>22.02</td><td>14.67</td><td>21.98</td><td>12.48</td></tr>
+    <tr><td>2128.0</td><td>3.364</td><td>21.46</td><td>13.92</td><td>20.66</td><td>11.6</td></tr>
+    <tr><td>990.0</td><td>2.953</td><td>17.12</td><td>11.67</td><td>16.72</td><td>9.62</td></tr>
+    <tr><td>473.4</td><td>2.009</td><td>11.52</td><td>7.53</td><td>10.97</td><td>6.21</td></tr>
+    <tr><td>267.7</td><td>1.365</td><td>7.46</td><td>4.812</td><td>7.0</td><td>4.023</td></tr>
+    <tr><td>197.3</td><td>1.061</td><td>5.694</td><td>3.698</td><td>5.378</td><td>3.073</td></tr>
+    <tr><td>102.4</td><td>0.5873</td><td>3.08</td><td>1.988</td><td>2.88</td><td>1.656</td></tr>
+    <tr><td>46.4</td><td>0.2726</td><td>1.419</td><td>0.841</td><td>1.324</td><td>0.759</td></tr>
+    <tr><td>22.8</td><td>0.1326</td><td>0.686</td><td>0.4162</td><td>0.64</td><td>0.368</td></tr>
+    <tr><td>10.6</td><td>0.0612</td><td>0.3142</td><td>0.1904</td><td>0.2929</td><td>0.1684</td></tr>
+  </tbody>
+</table>
+
 <br>
 
 <h3>抵抗値–電圧グラフ</h3>
 
-<p><strong>全データセット（360 & 720 rpm）</strong></p>
-<img src="img/all_datasets.png" width="600">
+<p><strong>360 rpm の全データ</strong></p>
+<img src="img/log_voltage_360rpm.png" width="600">
+<br>
+<br>
+<p><strong>720 rpm の全データ</strong></p>
+<img src="img/log_voltage_720rpm.png" width="600">
+<br>
+<br>
 
-<p><strong>360 rpm のみ</strong></p>
-<img src="img/rpm_360.png" width="600">
+<h3>抵抗値–電力グラフ</h3>
 
-<p><strong>720 rpm のみ</strong></p>
-<img src="img/rpm_720.png" width="600">
+<p><strong>φ6ネオジム磁石</strong></p>
+<img src="img/neo6_power_vs_resistance.png" width="600">
+<br>
+<br>
+<p><strong>φ10ネオジム磁石</strong></p>
+<img src="img/Neo10_power_log_plot.png" width="600">
+<br>
+<br>
+<p><strong>φ16ネオジム磁石　ヨーク無し</strong></p>
+<img src="img/Neo16NoYoke_power_log_plot.png" width="600">
+<br>
+<br>
+<p><strong>φ16ネオジム磁石　ヨーク有り</strong></p>
+<img src="img/Neo16SS400_power_log_plot.png" width="600">
+<br>
+<br>
+<p><strong>φ19フェライト磁石</strong></p>
+<img src="img/Fe19SS400_power_log_plot.png" width="600">
+<br>
+<br>
+<h3>抵抗値–電力グラフ　ヨークの有無による電力の比較</h3>
 
-<p><strong>磁石ごとの比較（360 vs 720 rpm）</strong></p>
-<img src="img/NdFeB6_360_vs_NdFeB6_720.png" width="600">
-<img src="img/NdFeB10_360_vs_NdFeB10_720.png" width="600">
-<img src="img/NdFeB16ep_360_vs_NdFeB16ep_720.png" width="600">
-<img src="img/NdFeB16no_360_vs_NdFeB16no_720.png" width="600">
-<img src="img/Ferrite_360_vs_Ferrite_720.png" width="600">
+<p><strong>φ16ネオジム磁石　コア23㎜</strong></p>
+<img src="img/neo16_power_23mm.png" width="600">
+<br>
+<br>
+<p><strong>φ16ネオジム磁石　コア60㎜</strong></p>
+<img src="img/neo16_power_60mm.png" width="600">
+<br>
+<br>
 
 
-<h3>抵抗値 vs 電力（360 rpm）</h3>
-<p><img src="img/R_vs_P_360rpm.png" alt="Resistance vs Power 360 rpm" width="480"></p>
+<h3>コア長さ23mm・360rpm・負荷46.4Ωでの発電結果</h3>
+<table border="1" cellspacing="0" cellpadding="6">
+<tr><th>磁石の種類</th><th>ヨーク</th><th>エアギャップ[mm]</th><th>出力電圧[V]</th><th>出力電力[W]</th></tr>
+<tr><td>ネオジムφ10</td><td>SS400</td><td>6.0</td><td>1.324</td><td>0.0378</td></tr>
+<tr><td>ネオジムφ16</td><td>SS400</td><td>5.0</td><td>1.406</td><td>0.0426</td></tr>
+<tr><td>フェライトφ19</td><td>SS400</td><td>2.0</td><td>0.789</td><td>0.0134</td></tr>
+</table>
 
-<h3>抵抗値 vs 電力（720 rpm）</h3>
-<p><img src="img/R_vs_P_720rpm.png" alt="Resistance vs Power 720 rpm" width="480"></p>
+
+<h3>コア長さ60mm・360rpm・負荷46.4Ωでの発電結果</h3>
+<table border="1" cellspacing="0" cellpadding="6">
+<tr><th>磁石の種類</th><th>ヨーク</th><th>エアギャップ[mm]</th><th>出力電圧[V]</th><th>出力電力[W]</th></tr>
+<tr><td>ネオジムφ10</td><td>SS400</td><td>4.5</td><td>1.326</td><td>0.0379</td></tr>
+<tr><td>ネオジムφ16</td><td>SS400</td><td>5.0</td><td>1.241</td><td>0.0332</td></tr>
+<tr><td>フェライトφ19</td><td>SS400</td><td>2.0</td><td>0.694</td><td>0.0104</td></tr>
+</table>
+
+<p><strong>試作品の精度が悪くバラツキが有り、上記エアギャップはおおよその値です</strong></p>
+
+<br>
+<br>
+
+<p>磁石の種類による発電量の比較（コア23mm）</p>
+<p>360rpm・46.4Ω負荷で測定した発電量を比較</p>
+<img src="img/power_output_23mm.png" width="500">
+
+<br>
+<br>
+<p>磁石の種類による発電量の比較（コア60mm）</p>
+<p>360rpm・46.4Ω負荷で測定した発電量を比較</p>
+<img src="img/power_output_60mm.png" width="500">
+
 <br>
                             <h3>参考</h3> 
 
-                            <p>LEDの抵抗は不明ですが、扇風機の風のほうが高い電圧が発生しているので回転数は高いです</p>
+                            <p>LEDの抵抗は不明ですが、扇風機の風のほうが高い電圧が発生しているので回転数は高いと思います</p>
                             <br>
 
-                            <p>　　　ネオジム磁石Φ16ｔ2.5　砂鉄　LED35個で72.0V発生</p>
-                            <p>　　　　　AIによる推定回転数：1300～1500r.p.m.</p>
-                                <video src="video/neo-16-2.5-sand.mp4" controls width="500"></video>
+                            <p>ネオジム磁石Φ16ｔ2.5　コア60㎜　SS400　LED20個で41.2V発生</p>
+                            <p>　　　　　AIによる推定回転数：1300～1500r.p.m.</p>                            
+                                <video src="video/N16(2)-60-H.mp4" controls width="500"></video>
                             <br>
                             <br>
-                            <p>　　　ネオジム磁石Φ16ｔ2.5　無し　LED30個で56.6V発生</p>
-                            <p>　　　　　AIによる推定回転数：1300～1500r.p.m.</p>
-                                <video src="video/neo-16-2.5-nashi.mp4" controls width="500"></video>
+                            <p>ネオジム磁石Φ16ｔ2.5　コア60㎜　無し　LED15個で30.5V発生</p>
+                            <p>　　　　　AIによる推定回転数：1500～1700r.p.m.</p> 
+                                <video src="video/N16(1)-60-H.mp4" controls width="500"></video>
                             <br>
                             <br>
-                            <p>　　　ネオジム磁石Φ10ｔ3　ss400　LED35個で67.9V発生</p>
-                            <p>　　　　　AIによる推定回転数：1000～1300r.p.m.</p>
-                                <video src="video/neo-10-3-ss400.mp4" controls width="500"></video>
+                            <p>ネオジム磁石Φ10ｔ3　コア23㎜　SS400　LED2個で3.01V発生</p>
+                            <p>　　　　　AIによる推定回転数：400～450r.p.m.</p> 
+                                <video src="video/N10-23-V.mp4" controls width="500"></video>
                             <br>                            
                             <br>
-                            <p>　　　ネオジム磁石Φ6ｔ3　砂鉄　LED15個で24.3V発生</p>
-                            <p>　　　　　AIによる推定回転数：1700～2000r.p.m.</p>
-                                <video src="video/neo-6-3-sand.mp4" loop controls width="500"></video>
+                            <p>ネオジム磁石Φ6ｔ3　コア60㎜　SS400　LED2個で3.61V発生</p>
+                            <p>　　　　　AIによる推定回転数：900～1000r.p.m.</p>                    
+                                <video src="video/N6-60-V.mp4" controls width="500"></video>
                             <br>
                             <br>
-                            <p>　　　フェライト磁石Φ18ｔ5　砂鉄　LED20個で39.5V発生</p>
-                            <p>　　　　　AIによる推定回転数：1300～1600r.p.m.</p>
-                                <video src="video/fe-18-5-sand.mp4" controls width="500"></video>
+                            <p>ネオジム磁石Φ10ｔ3　SS400　LED5個で9.11V発生</p>
+                            <p>　　　　　AIによる推定回転数：400～450r.p.m.</p>                       
+                                <video src="video/F19-60-V.mp4" controls width="500"></video>
                             <br>
                             <br>
-                            <p>　　　フェライト磁石Φ18ｔ5　砂鉄　LED7個で14.8V発生</p>
-                            <p>　　　　　AIによる推定回転数：580～600r.p.m.</p>
-                                <video src="video/video21.mp4" controls width="500"></video>
+                            <p>ネオジム磁石Φ6ｔ3　コア60㎜　砂鉄　LED5個で9.52V発生</p> 
+                            <p>　　　　　AIによる推定回転数：1700～1800r.p.m.</p> 
+                                <video src="video/N6-60-H.mp4" controls width="500"></video>
+                            <br>
+                            <br>
+                            <p>ネオジム磁石Φ16ｔ2.5　コア60㎜　SS400　100V5W球で22.41V発生</p>                           
+                                <video src="video/N16(2)-60-H-100V5W.mp4" controls width="500"></video>
                             <br>
                             <br>
                             <h3>大まかな構造</h3> 
-                            <img src="img/bunkai-t13.JPG" alt="分解した状態" width="500">
+                            <img src="img/bunkai.JPG" alt="分解した状態" width="500">
                             <p>　　　　コイルと磁石の間のものがコギング抑制板です</p>
                             <p>　　　フェライトロッドを砕いてエポキシ樹脂で固めたもの</p>
                             <br>
                             <br>
                             <h3>磁石部</h3> 
-                            <img src="img/all5.JPG" alt="磁石部" width="500">
+                            <img src="img/jisyaku.JPG" alt="磁石部" width="500">
                             <br>
                             <br>
-                            <h3>プロペラ、抵抗、LED、手回し</h3> 
-                            <img src="img/pera.JPG" alt="プロペラ等" width="500">
+                            <h3>コイル、コギング抑制板</h3> 
+                            <img src="img/ciol-yokuseiban.JPG" alt="プロペラ等" width="500">
                             <br>
-                       
+                            <br>
+                            <h3>抵抗、LED、電球、手回し</h3> 
+                            <img src="img/huka.JPG" alt="プロペラ等" width="500">
+                            <br>                                    
+
                             <h3>考察</h3>
 
                             <p><strong>コギングが消えない理由</strong></p>                            
-                            <p>　コギング抑制板の透磁率が高くなく磁束が逃げた、若しくは飽和<br>　した</p>                            
-                            <p><strong>抵抗値と電圧のグラフより</strong></p>
-                            <p>　ほぼ比例しているのでコアは飽和していない</p>
-                            <p>　内部抵抗が大きい</p>
-                            <p><strong>ヨークの有無</strong></p>
-                            <p>　Φ16t2.5、Φ10t3の3種類の結果を見ると効果は充分ある</p>
+                            <p>　コギング抑制板の磁気容量が十分ではなく、磁石がコアに引き付<br>　けられる力が完全には打ち消されていないため、わずかなコギン<br>　グが残っています</p>
+                            <p>　磁石の大きさや磁力に応じて、抑制板の材質・厚み・断面積を最<br>　適化すれば、さらにコギングを低減できると考えています</p>   
                             <br>
+
+                            <p><strong>抵抗値ー電圧のグラフより</strong></p>                      
+                            <p>　抵抗値と電圧はほぼ比例関係にあり、コアが磁気飽和している兆<br>　候は見られません</p>
+                            <p>　一方で、ポリウレタン線の抵抗が大きいため、内部抵抗の影響は<br>　無視できないと考えています</p>                            
+                            <br>
+
+                            <p><strong>抵抗値ー電力のグラフより</strong></p>          
+                            <p>　コイルの巻き数は約 3.5 倍、回転数は約 2 倍の差がありますが、<br>　内部抵抗や磁石の磁束密度の違いを考慮すると、電力が単純比例<br>　しないのは自然な挙動です</p>                            
+                            <p>　また、コア長さ 60mm の場合でも、電圧の増加傾向から磁束の時<br>　間変化は中央部まで十分に届いており、磁気飽和は起きていないと<br>　判断しています</p>
+                            <p>　磁石によって磁束が届く距離は異なりますが、磁束が届く範囲で<br>　コアを長くすれば、発電量の増加が期待できます</p>                            
+                            <br>
+
+                            <p><strong>抵抗値ー電力　ヨークの有無より</strong></p> 
+                            <p>　抵抗値–電力グラフから、ヨークを付けることで電力が全体にほ<br>　ぼ 2 倍に増加しており、磁束漏れを大幅に抑える効果が確認できま<br>　した</p>                            
+                            <p>　磁束漏れが少ないため、金属ケースに収めても渦電流による損失<br>　はほとんど発生しないと考えています</p>
+                            <br>
+
+
+                            <p><strong>負荷46.4Ωでのエアーギャップのグラフより</strong></p>
+                            <p>　今回の実験では、ネオジム φ10 磁石が最も大きな電力を得られ<br>　ましたが、これは 「扇風機の風だけで自力回転できること」を最<br>　優先にしたため、エアギャップを大きく取らざるを得なかったこ<br>　とが影響しています</p> 
+                            <p>　本来、エアギャップは小さいほど磁束の時間変化が大きくなり、<br>　発電量は増えます。しかしギャップを小さくするとコギングが増<br>　え、今回の条件では回転を開始できなくなります</p>                        
+                            <p>　また、φ16 磁石は φ10 より大きいにも関わらず発電量が少なか<br>　ったのは、磁束の広がり方やヨークの磁気容量との相性により、コ<br>　アに届く磁束が十分でなかったためと考えています</p>
+                            <p>　コギング抑制板の厚みや断面積、コア形状を最適化すれば、コギ<br>　ングをさらに低減し、エアギャップを小さくできる可能性があり<br>　ます</p>
+                            <p>　ギャップを小さくできれば、同じ磁石でもより大きな磁束変化が<br>　得られ、発電量の増加が期待できます</p>
+                            <br>
+
                             
-                            <h3>実用化にするには</h3>
-
-                            <p>　発電した電気は直接使用するよりDC-DC、若しくはFETで負荷を制<br>　御してバッテリーに充電、その後出力するほうが良い</p>
+                            <h3>実用化に向けて</h3>
+                            <p>以上の実験結果と考察を踏まえると、実用化には以下の点を検討する必要があります</p>
                             <br>
-                            <p>　元々は垂直軸型のプロペラと手回しのハンドルを取り換え可能な<br>　ものを考えていましたが、低い回転数で実用的なものにするには<br>　全体に大きくする必要が有る</p>
+                            <p>　磁石・コギング抑制板・コア・ヨークの形状や容積を最適化し、<br>　最も効率の良い組み合わせを検証する</p>
                             <br>
-                            <p>　AIによると、水平軸型のプロペラではコイル等はこのままでも強<br>　力な磁石、大きなプロペラにすれば実現可能との回答でした</p>
+                            <p>　試作品は精度が低くエアギャップのバラツキも大きいため、強度<br>　と加工精度を向上させる</p>
                             <br>
-                            <p>　フェライト磁石では一種類しか実験していませんが、これもAIによ<br>　ると全体に大きくすればLEDライト等の電源には実現可能との回答<br>　でした</p>
+                            <p>　発電した電気は直接使用するより、DC-DC コンバータや FET によ<br>　る負荷制御でバッテリーに充電し、その後出力するほうが効率的</p>
                             <br>
-                            <p>　コギングを無くそうと考えてましたが、ある程度残すことでコア<br>　レスとコアの有るものとの間を狙える</p>
+                            <p>　垂直軸型では低回転で実用化するには大型化が必要</p>
                             <br>
-                            <p>　ここまで試作、検証をしてきましたが一人での試作、検証には限<br>　界を感じ始めています</p>
+                            <p>　水平軸型で強力な磁石と大きなプロペラを組み合わせれば、現在<br>　のコイルでも実現可能</p>
                             <br>
+                            <p>　フェライト磁石でも、全体を大型化すれば LED ライト程度の電源<br>　として実用化可能</p>
                             <br>
-
-                            
-<h5>上記実測値を元に、この試作品の可能性をAIが推測した内容をグラフも含め、以下に記します</h5>
-<p>（回転数と電圧がほぼ比例する前提で、コイル抵抗や機械損失は一定と仮定）</p>
-<h3>抵抗値 vs 電圧（1500 rpm）</h3>
-<img src="img/1500rpm_voltage.png" width="600">
-
-<h3>抵抗値 vs 電力（1500 rpm）</h3>
-<img src="img/1500rpm_output.png" width="600">
-<br>
-<br>
-<h3>1500r.p.m.での出力を（ネオジム磁石Φ10t3を参考に）1Wとすると</h3>
-<p>整流・DC-DC・充電ロスを考慮すると、バッテリーには0.4～0.6W充電可能</p>
-<p>・小さめのLEDライトをじわじわ点灯、若しくは充電</p>
-<P>・小容量バッテリーをゆっくり充電（非常灯用）</P>
-<br>
-<br>
-<h3>ギヤ比10：1の手回しにした場合</h3>
-<P>2～3Wの出力は充分現実的な範囲と考えられます（回転数と電圧がほぼ比例する前提で、コイル抵抗や機械損失は一定と仮定）</P>
-<p>試作品では回転半径30mmのハンドル、ギヤ比3:1でしたが、回転時の負荷は軽かった</p>
-<p>・LEDランタン（1～2W）をしっかり点灯</p>
-<p>・スマホに「ちょい足し充電」（5V×0.3～0.5Aを短時間）</p>
-<p>・ラジオ・小型スピーカー・センサー類</p>
-<br>
-<h3>コイルと反対側の磁石の面をヨークで繋ぐことで出力が大きくなったことより</h3>
-<p>理論的には、Φ16の磁石にΦ10と同等のヨークを用いて磁束漏れを抑えられれば、Φ10の約1.5倍の出力が期待できます</p>
-<p>（現在のΦ16は磁束漏れによりΦ10より低い出力でしたが、
-　ヨークを最適化すればΦ10の1.5倍が期待できます）</p>
-
+                            <p>　コギングを完全に無くすより、多少残してでも発電量を増やすほう<br>　が有利な場合がある</p>
+                            <br>
+                            <p>ここまで一人で試作・検証を続けてきましたが、さらなる改良には精度の高い加工や追加の検証が必要だと感じています</p>          
                             <br>
                             <br>
                             <h3>関連動画について</h3>

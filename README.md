@@ -1,266 +1,273 @@
-# マイクロ風力発電機
+# マイクロ風力発電機（手回し発電機）
 
-非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています
+非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています。
+個人でも実験できる範囲で、家庭用扇風機の「強」の風でも発電することを条件としています。
 
-条件としては、個人でも実験できる範囲で家庭用扇風機の「強」の風でも発電するものです
+最新の実験結果（Release12・WEB版）  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
-特に、非常時の電源確保を目的とした小型風力発電機としての実用性を重視しています。
+---
 
-試作品の詳細ページ（WEB版）:  
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
+## 構想
 
-# 構想
-
-## 普段はベランダで垂直軸風車として発電し、バッテリーに充電
-
+- 普段はベランダで垂直軸風車として発電し、バッテリーにゆっくり充電
 - 風向きに依存しない
 - 低風速でも回転しやすい
-- 常時ゆっくり充電しておく
+- 非常時には持ち運べる大きさ
+- 台風時は安全な場所へ移動
+- 水平軸プロペラや手回しハンドルに交換可能
+- 扇風機の風でも回る軽い回転トルク
+- ギヤ比10:1の手回しでも使用可能
+- 風力・手回しの両対応
 
-## 非常時には簡単に持ち運べる大きさ、重さ
+---
 
-- 台風の時には風の当たらないところへ移動
+## 発電機の構造
 
-## 水平軸風車、手回し用ハンドルに交換可能
-
-- 扇風機の風でも回るほどの軽い回転トルク
-- ギヤ比10:1の手回しでも問題なし
-- 風力、手回しのどちらでも使用可能
-
-# 発電機の構造
-
-- 本試作品はアキシャルギャップ型の単相交流発電機
-- コイル12個を直列に結線
+- アキシャルギャップ型・単相交流発電機
+- コイル12個を直列接続
 - Φ10フェライトロッドをコアに使用
 - 磁石背面をヨークで接続し、漏れ磁束を大幅に低減
-- コギング抑制板を追加し、コアレスに近い回転を実現
-- リング状ネオジム磁石の反発力で磁石とコギング抑制板の隙間を一定に保つ
-- 個人でも入手可能な材料（アンテナ用フェライトロッド、砂鉄、エポキシ樹脂）
+- コギング抑制板を追加し、コアレスに近い軽さを実現
+- リング状ネオジム磁石の反発力でギャップを一定に保持
+- 材料はすべて個人入手可能（フェライトロッド・砂鉄・エポキシ樹脂）
 
-大まかな構造
-<img src="img/bunkai-t13.JPG" alt="分解した状態" width="500">
+---
 
-組み立て時
-<img src="img/kumitateji.JPG" alt="磁石部" width="500">
+## 実験環境
 
-# 実験環境
+- 風洞設備なし → 家庭用扇風機を使用
+- プロペラは扇風機の風が当たるサイズに調整
+- 試作品の精度が低く、ギャップが完全に均一ではない
+- コギング抑制板はフェライト粉末＋エポキシで透磁率が低い
 
-- 風洞設備が無いので家庭用扇風機を使用
-- プロペラは扇風機の大きさに合わせた（大きすぎても風が当たらない）
-- 試作品の強度、精度が充分ではなくギャップが均一でない
-- コギング抑制板は、フェライトロッドを粉砕したものをエポキシ樹脂固めたもので、透磁率は低い
+---
 
-# 実験結果（Release9）
+## 実験結果（概要）
 
-720r.p.m.（手回し）
-- 最大出力：約0.3W（ネオジム磁石Φ10）
+※ 詳細データは Release12（WEB版）に掲載  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
-扇風機の「強」の風（LEDの点灯電圧と実測値より推定：1300～1500r.p.m.）
-- 最大出力：約1W
+### ● 720 rpm（手回し）
+最大出力：約 **0.3 W**（ネオジムΦ10）
 
-整流+DC-DC後の実力出力
-- 0.4～0.6W
+### ● 扇風機「強」相当（推定 1300〜1500 rpm）
+最大出力：約 **1 W**
 
-垂直軸型でも実験はしましたが、発電量が大きくなかったため省略しました
-- 垂直軸型は水平軸型の大体1/3くらいしか発電量は有りませんでした
+### ● 整流＋DC-DC後の実力値
+**0.4〜0.6 W**
 
-# 実験結果から得られた知見
+### ● 垂直軸型
+水平軸の **約1/3** の発電量 → 実用性が低いため省略
+
+---
+
+## 実験から得られた知見
+
 - ヨークの効果は大きい（出力が明確に向上）
 - コアは飽和していない（電圧が抵抗に比例）
 - ギャップのばらつきが性能を低下
-- コギング抑制板は効果あり（ただし、透磁率不足）
-- 内部抵抗が大きく、低負荷で電力が頭打ち
-- 扇風機の風は安定しているが、プロペラの大きさに制限有り
+- コギング抑制板は効果あり（ただし透磁率不足）
+- 内部抵抗が大きく、低負荷で頭打ち
+- 扇風機の風は安定しているが、プロペラ径に制限あり
 
-# 実用化の可能性
+---
 
-## 今の大きさでできるとすれば
+## 実用化の可能性
 
+### ● 現状のサイズで可能なこと
 - LEDライト
 - 小型バッテリーのゆっくり充電
-- 手回し10:1で2～3W（ちょい足し充電）
+- 手回し10:1で **2〜3 W**（ちょい足し充電）
 
-## 今の大きさで難しいこと
+### ● 現状のサイズで難しいこと
+- スマホの通常充電（5 W）
+- 12Vバッテリーの本格充電
 
-- スマホの通常充電（5W）
-- 12Vバッテリーへの本格充電（12V）
+### ● スケールアップの可能性
+- ヨーク構造が非常に効果的
+- コギング抑制板でコアレスに近い軽さ
+- 直径・極数・磁石サイズ・回転数を増やせば  
+  **5〜10 W級の小型風力発電機も十分に狙える**
 
-## 潜在能力は高いと感じています
-小型ながら、構造的には大規模化に向いていると自負しています
+---
 
-- ヨークで磁束を閉じる構造は非常に効果的
-- コギング抑制板でコアレスに近い軽さを実現
-- 発電機の規模を大きく（直径、極数、磁石、回転数等）すれば、5～10W級の実用風力発電機も有望
-
-# 改善すべき点
+## 改善すべき点
 
 - ギャップの平行度を改善
-- 高透磁率素材でコア、コギング抑制板の改善
+- 高透磁率素材でコア・コギング抑制板を改善
 - 多極化
 - コイル抵抗の低減
 - 屋外での評価
-- プロペラを大きくする
+- プロペラの大型化
 
-# 磁性粉末の入手について
+---
 
-## コギング低減のため、以下の材料で実験したいと考えています
+## 磁性粉末の入手について
+
+コギング低減のため、以下の材料で実験したい：
 
 - ナノ結晶材粉末
 - アモルファス金属粉末
 - 積層用純鉄粉末
 - パーマロイ系・ケイ素鋼系粉末
 
-ですが、個人で少量入手することが難しく、大きな制約となっています
+しかし、個人では少量入手が難しく、制約となっています。
 
-# ご支援・ご協力のお願い
+---
 
-材料の調達や加工方法について、無償で情報提供いただけると大変助かります
+## ご支援・ご協力のお願い
 
-GitHub issuesにて連絡頂ければ幸いです
+材料や加工方法を無償にて情報提供いただけると助かります。  
+GitHub Issues にてご連絡ください。
+
+---
 
 ## 英語表記について
 
-私は英語が苦手です
+英語は翻訳ツールを使用しています。  
+正確でない可能性がありますがご了承ください。
 
-英文は翻訳機にて翻訳しているので、正確かどうか私には判断できません
-
-ご了承願います　
+---
 
 ## 過去の実験
 
-過去の実験内容はInstagramにも掲載しています
-#マイクロ風力発電機　#モバイル風力発電機　#家庭用風力発電機　#自作発電機　
+Instagram にも掲載しています。  
+#マイクロ風力発電機 #モバイル風力発電機 #家庭用風力発電機 #自作発電機
 
+# Micro Wind Generator (Hand-Crank Compatible)
 
-# Micro Wind Generator
+This project aims to develop a compact wind generator capable of charging smartphones and 12V devices during emergencies.
+The key requirement is that the generator must operate even with the “strong” setting of a household electric fan, allowing experiments to be performed without special equipment.
 
-This project is being developed with potential commercialization in mind,
-aiming to create a small wind generator capable of charging smartphones
-and 12V devices during emergencies.
+Latest experimental results (Release 12):  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
-The main requirement is that the generator must operate within the range of
-experiments an individual can perform — specifically, it should generate power
-even with the “strong” setting of a household electric fan.
+---
 
-## Prototype Web Page
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR/
+## Concept
 
-# Concept
-
-## Normal use: vertical-axis wind turbine on a balcony
-
-- Does not depend on wind direction
-- Easy to rotate even at low wind speeds
-- Slowly charges a battery continuously
-
-## Portable during emergencies
-
+- Vertical-axis turbine for daily slow charging
+- Independent of wind direction
+- Easy to rotate at low wind speeds
+- Portable during emergencies
 - Can be moved to a safe place during typhoons
-- Small and lightweight enough to carry
-
-## Interchangeable with horizontal-axis blades or a hand-crank
-
+- Interchangeable with horizontal-axis blades or a hand-crank
 - Very low rotational torque — spins even with a household fan
-- Works with a 10:1 hand-crank gear ratio
-- Can be used with wind or manual power
+- Works with a 10:1 hand‑crank gear ratio
+- Supports both wind and manual operation
 
-# Generator Structure
+---
 
-- Axial-flux, single-phase AC generator
+## Generator Structure
+
+- Axial‑flux, single‑phase AC generator
 - 12 coils connected in series
 - Φ10 ferrite rods used as cores
 - Magnetic yoke on the back of the magnets to reduce flux leakage
-- Cogging-reduction plate added to achieve near-coreless rotation
-- Axial gap maintained by repulsion between ring-shaped neodymium magnets
-- All materials are easy to obtain (antenna ferrite rods, iron sand, epoxy resin)
+- Cogging‑reduction plate for near‑coreless rotation
+- Axial gap maintained by repulsion between ring‑shaped neodymium magnets
+- All materials are easy to obtain (ferrite rods, iron sand, epoxy resin)
 
-# Experimental Environment
+---
 
-- No wind tunnel — used a household electric fan
-- Propeller size matched to the fan (too large and wind won’t hit it)
-- Prototype has limited strength and precision, so the gap is not perfectly uniform
-- Cogging-reduction plate is made from crushed ferrite rods mixed with epoxy, so permeability is low
+## Experimental Environment
 
-# Experimental Results (Release 9)
+- No wind tunnel — household fan used
+- Propeller size matched to the fan
+- Prototype has limited precision; air gap is not perfectly uniform
+- Cogging‑reduction plate made from crushed ferrite rods + epoxy (low permeability)
 
-### 720 rpm (hand-crank)
-- Max output: approx. **0.3 W** (NdFeB Φ10)
+---
 
-### Household fan “strong” wind  
-(estimated 1300–1500 rpm from LED voltage and measured data)
-- Max output: approx. **1 W**
+## Experimental Results (Summary)
 
-### After rectifier + DC-DC converter
-- Usable output: **0.4–0.6 W**
+Full data is available in Release 12 (Web version).
 
-### Vertical-axis test
-- Tested, but output was low, so omitted  
-- Vertical-axis output was roughly **1/3** of the horizontal-axis version
+### ● 720 rpm (hand‑crank)
+Max output: **~0.3 W** (NdFeB Φ10)
 
-# Findings from Experiments
+### ● Household fan “strong” wind (estimated 1300–1500 rpm)
+Max output: **~1 W**
+
+### ● After rectifier + DC‑DC converter
+Usable output: **0.4–0.6 W**
+
+### ● Vertical‑axis test
+Output was roughly **1/3** of the horizontal‑axis version.
+
+---
+
+## Findings
 
 - Yoke is highly effective (clear increase in output)
 - Core is not saturated (voltage proportional to load resistance)
 - Gap unevenness reduces performance
-- Cogging-reduction plate works, but permeability is insufficient
+- Cogging‑reduction plate works, but permeability is insufficient
 - Internal resistance is high, limiting power at low loads
 - Fan wind is stable, but propeller size is restricted
 
-# Practical Possibilities
+---
 
-## What is feasible at the current size
+## Practical Possibilities
 
+### ● Feasible at the current size
 - LED lighting
 - Slow charging of small batteries
-- 2–3 W with 10:1 hand-crank (useful for “quick top-up” charging)
+- **2–3 W** with a 10:1 hand‑crank (useful for quick top‑up charging)
 
-## What is difficult at the current size
-
+### ● Difficult at the current size
 - Normal smartphone charging (5 W)
 - Proper charging of 12V batteries
 
-## Potential for scaling up
+### ● Potential for scaling up
+- Yoke‑based flux‑closing structure is very effective
+- Cogging‑reduction plate enables near‑coreless rotation
+- Increasing diameter, pole count, magnet size, or rpm could enable  
+  **5–10 W class small wind generators**
 
-Although small, the structure is well-suited for scaling up.
+---
 
-- Yoke-based flux-closing structure is very effective
-- Cogging-reduction plate enables near-coreless rotation
-- Increasing diameter, pole count, magnet size, or rpm could make **5–10 W class** wind generators realistic
+## Areas for Improvement
 
-# Areas for Improvement
-
-- Improve parallelism of the air gap
-- Use higher-permeability materials for cores and cogging-reduction plate
+- Improve air‑gap parallelism
+- Use higher‑permeability materials for cores and cogging‑reduction plate
 - Increase pole count
 - Reduce coil resistance
 - Outdoor testing
 - Larger propeller
 
-# About Magnetic Powders
+---
+
+## About Magnetic Powders
 
 To further reduce cogging, I would like to experiment with:
 
 - Nanocrystalline powder
 - Amorphous metal powder
 - Pure iron powder for lamination
-- Permalloy / silicon-steel powders
+- Permalloy / silicon‑steel powders
 
-However, obtaining small quantities as an individual is difficult and is currently a major limitation.
+However, obtaining small quantities as an individual is difficult.
 
-# Request for Support
+---
 
-If you can provide information about materials or processing methods, even non-commercially, it would be greatly appreciated.
+## Request for Support
 
+I would greatly appreciate any information you can provide about materials or processing methods, free of charge.
 Please contact me via GitHub Issues.
 
-# About the English Version
+---
 
-I am not very good at English.
-Since I rely on translation tools, I cannot judge whether the English sentences are accurate.
+## About the English Version
+
+I rely on translation tools, so the English text may not be perfect.  
 Thank you for your understanding.
-Please translate this into English as well, because I may have trouble when I receive messages in English.
 
-# Past Experiments
+---
+
+## Past Experiments
 
 Past experiments are also posted on Instagram.  
-#マイクロ風力発電機　#モバイル風力発電機　#家庭用風力発電機　#自作発電機　
+#MicroWindGenerator #MobileWindGenerator #DIYGenerator
+
