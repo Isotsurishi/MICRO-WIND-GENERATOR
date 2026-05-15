@@ -60,9 +60,11 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 ### ● 垂直軸型
 水平軸の **約1/3** の発電量 → 実用性が低いため省略
 
-<video src="https://raw.githubusercontent.com/Isotsurishi/MICRO-WIND-GENERATOR/master/video/F19-60-V.mp4" controls width="360"></video>
+### 実験動画（水平軸）
+[▶ F19-60-H.mp4 を再生](./video/F19-60-H.mp4)
 
-<video src="https://raw.githubusercontent.com/Isotsurishi/MICRO-WIND-GENERATOR/master/video/F19-60-H.mp4" controls width="360"></video>
+### 実験動画（垂直軸）
+[▶ F19-60-V.mp4 を再生](./video/F19-60-V.mp4)
 
 ---
 
