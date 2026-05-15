@@ -61,10 +61,13 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 水平軸の **約1/3** の発電量 → 実用性が低いため省略
 
 ### 実験動画（水平軸）
-[▶ F19-60-H.mp4 を再生](./video/F19-60-H.mp4)
+[▶ F19-60-H.mp4 を再生](./video/F19-60-H.mp4)  
+※ GitHub の仕様により動画は直接再生できません。  
+　リンク先のページで **「View raw」** を押すと再生できます。
 
 ### 実験動画（垂直軸）
-[▶ F19-60-V.mp4 を再生](./video/F19-60-V.mp4)
+[▶ F19-60-V.mp4 を再生](./video/F19-60-V.mp4)  
+※ 同様に、**「View raw」** を押すと再生できます。
 
 ---
 
