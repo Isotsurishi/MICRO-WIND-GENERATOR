@@ -60,6 +60,13 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 ### ● 垂直軸型
 水平軸の **約1/3** の発電量 → 実用性が低いため省略
 
+### 垂直軸型（フェライト磁石・扇風機駆動）
+<video src="https://raw.githubusercontent.com/Isotsurishi/MICRO-WIND-GENERATOR/master/video/F19-60-V.mp4" controls width="360"></video>
+
+### 水平軸型（フェライト磁石・扇風機駆動）
+<video src="https://raw.githubusercontent.com/Isotsurishi/MICRO-WIND-GENERATOR/master/video/F19-60-H.mp4" controls width="360"></video>
+
+
 ---
 
 ## 実験から得られた知見
