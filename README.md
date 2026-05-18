@@ -3,7 +3,7 @@
 非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています。
 個人でも実験できる範囲で、家庭用扇風機の「強」の風でも発電することを条件としています。
 
-最新の実験結果（Release12・WEB版）  
+最新の実験結果（Release13・WEB版）  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ---
@@ -149,7 +149,7 @@ Instagram にも掲載しています。
 This project aims to develop a compact wind generator capable of charging smartphones and 12V devices during emergencies.
 The key requirement is that the generator must operate even with the “strong” setting of a household electric fan, allowing experiments to be performed without special equipment.
 
-Latest experimental results (Release 12):  
+Latest experimental results (Release 13):  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ---
@@ -204,6 +204,19 @@ Usable output: **0.4–0.6 W**
 
 ### ● Vertical‑axis test
 Output was roughly **1/3** of the horizontal‑axis version.
+
+### ● Vertical-Axis Type
+Generates only about one-third of the horizontal-axis output → Omitted due to low practicality
+
+### Experimental Video (Horizontal Axis)
+[▶ Play F19-60-H.mp4](./video/F19-60-H.mp4)  
+※ Due to GitHub specifications, videos cannot be played directly.  
+  Click **"View raw"** on the linked page to play the file.
+
+### Experimental Video (Vertical Axis)
+[▶ Play F19-60-V.mp4](./video/F19-60-V.mp4)  
+※ Likewise, click **"View raw"** to play the file.
+
 
 ---
 
