@@ -191,7 +191,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## Experimental Results (Summary)
 
-Full data is available in Release 12 (Web version).
+Full data is available in Release 13 (Web version).
 
 ### ● 720 rpm (hand‑crank)
 Max output: **~0.3 W** (NdFeB Φ10)
