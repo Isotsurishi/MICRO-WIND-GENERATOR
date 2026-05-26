@@ -4,7 +4,7 @@ This project aims to develop a compact wind turbine capable of charging smartpho
 All experiments are conducted using materials and tools that individuals can easily obtain.  
 A key design requirement is that the generator must operate even with the airflow from a household electric fan set to “Strong”.
 
-Latest experimental results (Release 13 – Web version):  
+Latest experimental results (Release 14 – Web version):  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ---
@@ -46,7 +46,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## Experimental Results (Summary)
 
-Detailed data is available in Release 13 (Web version):  
+Detailed data is available in Release 14 (Web version):  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ### ● 720 rpm (Hand‑crank)
@@ -155,7 +155,7 @@ Also posted on Instagram.
 非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています。
 個人でも実験できる範囲で、家庭用扇風機の「強」の風でも発電することを条件としています。
 
-最新の実験結果（Release13・WEB版）  
+最新の実験結果（Release14・WEB版）  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ---
@@ -197,7 +197,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## 実験結果（概要）
 
-※ 詳細データは Release13（WEB版）に掲載  
+※ 詳細データは Release14（WEB版）に掲載  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ### ● 720 rpm（手回し）
