@@ -1,0 +1,10 @@
+<img src="img/voltage_360rpm.png" width="600">
+<img src="img/voltage_720rpm.png" width="600">
+<img src="img/voltage_1200rpm.png" width="600">
+<img src="img/voltage_1800rpm.png" width="600">
+
+<img src="img/power_neo6.png" width="600">
+<img src="img/power_neo10.png" width="600">
+<img src="img/power_neo16_no.png" width="600">
+<img src="img/power_neo16_ss.png" width="600">
+<img src="img/power_ferrite18.png" width="600">

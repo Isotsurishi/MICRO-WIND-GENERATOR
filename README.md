@@ -1,3 +1,155 @@
+# Micro Wind Turbine (Hand‑Crank Generator)
+
+This project aims to develop a compact wind turbine capable of charging smartphones and 12V devices during emergencies.  
+All experiments are conducted using materials and tools that individuals can easily obtain.  
+A key design requirement is that the generator must operate even with the airflow from a household electric fan set to “Strong”.
+
+Latest experimental results (Release 13 – Web version):  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR
+
+---
+
+## Concept
+
+- Operates as a vertical‑axis wind turbine on a balcony for slow battery charging
+- Independent of wind direction
+- Easy to start rotating even at low wind speeds
+- Portable size for emergency use
+- Can be moved to a safe location during typhoons
+- Swappable between horizontal‑axis propeller and hand‑crank handle
+- Very low rotational torque — spins even with fan airflow
+- Usable with a 10:1 hand‑crank gear ratio
+- Supports both wind and manual operation
+
+---
+
+## Generator Structure
+
+- Axial‑gap, single‑phase AC generator
+- 12 coils connected in series
+- Φ10 ferrite rods used as cores
+- Magnetic flux leakage significantly reduced by adding a rear‑side yoke
+- Cogging‑reduction plate added to achieve near‑coreless rotational smoothness
+- Ring‑shaped neodymium magnets maintain a constant air gap via repulsive force
+- All materials are individually obtainable (ferrite rods, iron sand, epoxy resin)
+
+---
+
+## Experimental Environment
+
+- No wind tunnel — household electric fan used
+- Propeller size adjusted to match the fan’s airflow area
+- Prototype accuracy is low; air gap is not perfectly uniform
+- Cogging‑reduction plate uses ferrite powder + epoxy, resulting in low permeability
+
+---
+
+## Experimental Results (Summary)
+
+Detailed data is available in Release 13 (Web version):  
+https://isotsurishi.github.io/MICRO-WIND-GENERATOR
+
+### ● 720 rpm (Hand‑crank)
+Maximum output: **0.25–0.35 W** (Neodymium Φ10)
+
+### ● Electric fan “Strong” (estimated 1300–1500 rpm)
+Maximum output: **0.4–0.5 W**
+
+### ● After rectifier + DC‑DC converter
+**0.3–0.45 W**
+
+### ● Vertical‑axis type
+Under the same conditions: **0.15–0.2 W**  
+Vertical‑axis output is about one‑third of the horizontal‑axis type.  
+Since it is unsuitable for emergency power generation, details are omitted.
+
+### Experimental Video (Horizontal Axis)
+[▶ F18‑60‑H.mp4](./video/F18-60-H.mp4)  
+*Click “View raw” on GitHub to play the video.*
+
+### Experimental Video (Vertical Axis)
+[▶ F18‑60‑V.mp4](./video/F18-60-V.mp4)  
+*Click “View raw” to play.*
+
+※ High‑rpm measurement data (1200 rpm / 1800 rpm) has been newly added in Release14.
+
+---
+
+## Findings from Experiments
+
+- Yoke significantly improves output
+- Core does not saturate (voltage proportional to load resistance)
+- Air‑gap unevenness reduces performance
+- Cogging‑reduction plate is effective, though permeability is insufficient
+- High internal resistance limits output under low‑load conditions
+- Fan airflow is stable, but propeller diameter is restricted
+
+---
+
+## Practical Potential
+
+### ● What is possible with the current size
+- LED lighting
+- Slow charging of small batteries
+- **1–2 W** with a 10:1 hand‑crank gear ratio (estimated; suitable for small top‑up charging)
+
+### ● What is difficult with the current size
+- Standard smartphone charging (5 W)
+- Full charging of 12V batteries
+
+### ● Potential for scaling up
+- Yoke structure is highly effective
+- Cogging‑reduction plate provides near‑coreless smoothness
+- Increasing diameter, pole count, magnet size, and rpm could achieve:  
+  **5–10 W class output (comparable to existing small wind turbines)**
+
+---
+
+## Points for Improvement
+
+- Improve air‑gap parallelism
+- Use higher‑permeability materials for core and cogging‑reduction plate
+- Increase pole count
+- Reduce coil resistance
+- Conduct outdoor testing
+- Increase propeller diameter
+
+---
+
+## About Magnetic Powder Materials
+
+To further reduce cogging, the following materials are desired for testing:
+
+- Nanocrystalline powder
+- Amorphous metal powder
+- Pure iron powder for laminated cores
+- Permalloy / silicon‑steel‑based powders
+
+However, obtaining small quantities of these materials is difficult for individuals.
+
+---
+
+## Request for Support
+
+Any information regarding materials or fabrication methods would be greatly appreciated.  
+Please contact via GitHub Issues.
+
+---
+
+## About English Translation
+
+English text is generated using translation tools.  
+Accuracy is not guaranteed.
+
+---
+
+## Previous Experiments
+
+Also posted on Instagram.  
+#micro_wind_turbine #mobile_wind_generator #home_wind_turbine
+
+
+
 # マイクロ風力発電機（手回し発電機）
 
 非常時にスマホや12V機器を充電できる小型風力発電機として、実用化・商品化に向けて検討を進めています。
@@ -45,29 +197,33 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## 実験結果（概要）
 
-※ 詳細データは Release12（WEB版）に掲載  
+※ 詳細データは Release13（WEB版）に掲載  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ### ● 720 rpm（手回し）
-最大出力：約 **0.3 W**（ネオジムΦ10）
+最大出力：約 **0.25～0.35 W**（ネオジムΦ10）
 
 ### ● 扇風機「強」相当（推定 1300〜1500 rpm）
-最大出力：約 **1 W**
+最大出力：約 **0.4～0.5 W**
 
 ### ● 整流＋DC-DC後の実力値
-**0.4〜0.6 W**
+**0.3〜0.45 W**
 
 ### ● 垂直軸型
-水平軸の **約1/3** の発電量 → 実用性が低いため省略
+同条件で **0.15〜0.2 W**  
+垂直軸は水平軸の約1/3の出力で、  
+今回の目的（非常時の発電）には不向きなため詳細は省略
 
 ### 実験動画（水平軸）
-[▶ F19-60-H.mp4 を再生](./video/F19-60-H.mp4)  
+[▶ F18-60-H.mp4 を再生](./video/F18-60-H.mp4)  
 ※ GitHub の仕様により動画は直接再生できません。  
 　リンク先のページで **「View raw」** を押すと再生できます。
 
 ### 実験動画（垂直軸）
-[▶ F19-60-V.mp4 を再生](./video/F19-60-V.mp4)  
+[▶ F18-60-V.mp4 を再生](./video/F18-60-V.mp4)  
 ※ 同様に、**「View raw」** を押すと再生できます。
+
+※1200 rpm / 1800 rpm の高回転域データも Release14 にて追加しました。
 
 ---
 
@@ -87,7 +243,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 ### ● 現状のサイズで可能なこと
 - LEDライト
 - 小型バッテリーのゆっくり充電
-- 手回し10:1で **2〜3 W**（ちょい足し充電）
+- 手回し10:1で **1〜2 W 程度（推定値・ちょい足し充電）**
 
 ### ● 現状のサイズで難しいこと
 - スマホの通常充電（5 W）
@@ -97,7 +253,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 - ヨーク構造が非常に効果的
 - コギング抑制板でコアレスに近い軽さ
 - 直径・極数・磁石サイズ・回転数を増やせば  
-  **5〜10 W級の小型風力発電機も十分に狙える**
+  **5〜10W級も十分に現実的（既存の小型風車と同等）**
 
 ---
 
@@ -142,154 +298,4 @@ GitHub Issues にてご連絡ください。
 ## 過去の実験
 
 Instagram にも掲載しています。  
-#マイクロ風力発電機 #モバイル風力発電機 #家庭用風力発電機 #自作発電機
-
-# Micro Wind Generator (Hand-Crank Compatible)
-
-This project aims to develop a compact wind generator capable of charging smartphones and 12V devices during emergencies.
-The key requirement is that the generator must operate even with the “strong” setting of a household electric fan, allowing experiments to be performed without special equipment.
-
-Latest experimental results (Release 13):  
-https://isotsurishi.github.io/MICRO-WIND-GENERATOR
-
----
-
-## Concept
-
-- Vertical-axis turbine for daily slow charging
-- Independent of wind direction
-- Easy to rotate at low wind speeds
-- Portable during emergencies
-- Can be moved to a safe place during typhoons
-- Interchangeable with horizontal-axis blades or a hand-crank
-- Very low rotational torque — spins even with a household fan
-- Works with a 10:1 hand‑crank gear ratio
-- Supports both wind and manual operation
-
----
-
-## Generator Structure
-
-- Axial‑flux, single‑phase AC generator
-- 12 coils connected in series
-- Φ10 ferrite rods used as cores
-- Magnetic yoke on the back of the magnets to reduce flux leakage
-- Cogging‑reduction plate for near‑coreless rotation
-- Axial gap maintained by repulsion between ring‑shaped neodymium magnets
-- All materials are easy to obtain (ferrite rods, iron sand, epoxy resin)
-
----
-
-## Experimental Environment
-
-- No wind tunnel — household fan used
-- Propeller size matched to the fan
-- Prototype has limited precision; air gap is not perfectly uniform
-- Cogging‑reduction plate made from crushed ferrite rods + epoxy (low permeability)
-
----
-
-## Experimental Results (Summary)
-
-Full data is available in Release 13 (Web version).
-
-### ● 720 rpm (hand‑crank)
-Max output: **~0.3 W** (NdFeB Φ10)
-
-### ● Household fan “strong” wind (estimated 1300–1500 rpm)
-Max output: **~1 W**
-
-### ● After rectifier + DC‑DC converter
-Usable output: **0.4–0.6 W**
-
-### ● Vertical‑axis test
-Output was roughly **1/3** of the horizontal‑axis version.
-
-### ● Vertical-Axis Type
-Generates only about one-third of the horizontal-axis output → Omitted due to low practicality
-
-### Experimental Video (Horizontal Axis)
-[▶ Play F19-60-H.mp4](./video/F19-60-H.mp4)  
-※ Due to GitHub specifications, videos cannot be played directly.  
-  Click **"View raw"** on the linked page to play the file.
-
-### Experimental Video (Vertical Axis)
-[▶ Play F19-60-V.mp4](./video/F19-60-V.mp4)  
-※ Likewise, click **"View raw"** to play the file.
-
-
----
-
-## Findings
-
-- Yoke is highly effective (clear increase in output)
-- Core is not saturated (voltage proportional to load resistance)
-- Gap unevenness reduces performance
-- Cogging‑reduction plate works, but permeability is insufficient
-- Internal resistance is high, limiting power at low loads
-- Fan wind is stable, but propeller size is restricted
-
----
-
-## Practical Possibilities
-
-### ● Feasible at the current size
-- LED lighting
-- Slow charging of small batteries
-- **2–3 W** with a 10:1 hand‑crank (useful for quick top‑up charging)
-
-### ● Difficult at the current size
-- Normal smartphone charging (5 W)
-- Proper charging of 12V batteries
-
-### ● Potential for scaling up
-- Yoke‑based flux‑closing structure is very effective
-- Cogging‑reduction plate enables near‑coreless rotation
-- Increasing diameter, pole count, magnet size, or rpm could enable  
-  **5–10 W class small wind generators**
-
----
-
-## Areas for Improvement
-
-- Improve air‑gap parallelism
-- Use higher‑permeability materials for cores and cogging‑reduction plate
-- Increase pole count
-- Reduce coil resistance
-- Outdoor testing
-- Larger propeller
-
----
-
-## About Magnetic Powders
-
-To further reduce cogging, I would like to experiment with:
-
-- Nanocrystalline powder
-- Amorphous metal powder
-- Pure iron powder for lamination
-- Permalloy / silicon‑steel powders
-
-However, obtaining small quantities as an individual is difficult.
-
----
-
-## Request for Support
-
-I would greatly appreciate any information you can provide about materials or processing methods, free of charge.
-Please contact me via GitHub Issues.
-
----
-
-## About the English Version
-
-I rely on translation tools, so the English text may not be perfect.  
-Thank you for your understanding.
-
----
-
-## Past Experiments
-
-Past experiments are also posted on Instagram.  
-#MicroWindGenerator #MobileWindGenerator #DIYGenerator
-
+#マイクロ風力発電機 #モバイル風力発電機 #家庭用風力発電機
