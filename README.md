@@ -38,6 +38,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 - Ring‑shaped neodymium magnets maintain a constant air gap via repulsive force
 - All materials are individually obtainable (ferrite rods, iron sand, epoxy resin)
 
+
 ---
 
 ## Experimental Environment
@@ -134,26 +135,100 @@ However, obtaining small quantities of these materials is difficult for individu
 
 ---
 
-## Request for Support
+## Release15 – Analysis and Future Verification Plan
 
-Any information regarding materials or fabrication methods would be greatly appreciated.  
-Please contact via GitHub Issues.
+Analysis
+Only this section has been added or modified in Release15.
+Basic condition: Household electric fan set to “Strong”.
+
+1. Cogging‑Reduction Plate
+Increasing the thickness to t13 increased the volume, which significantly improved cogging reduction and increased output.
+
+Items to verify
+
+Aim for minimum volume and minimum weight while achieving “almost zero cogging”.
+
+Prototype and test different materials, shapes, and volumes.
+
+2. Coil Core
+Under the condition of “starting rotation with the airflow of a household fan”,
+the distance between the magnet and the cogging‑reduction plate varied to reduce cogging.
+However, the output of neodymium magnets φ10t3 and φ16t2.5 did not differ significantly.
+
+This suggests that the magnetic flux through the core is nearly saturated (“flux‑limited”) in both cases.
+
+Items to verify
+
+Increase the core diameter to increase the magnetic flux capacity (cross‑sectional area).
+
+If possible, reduce weight by testing:
+
+Cylindrical (hollow) cores
+
+Fan‑shaped coils (sector‑shaped coils)
+
+3. Number of Coil Turns
+For the 23 mm core (330 turns, 19.9 Ω) and the 60 mm core (1170 turns, 68.9 Ω),
+the resistance and rotational speed differ (rpm not measured, but assumed different due to identical wind speed),
+yet the maximum output was nearly the same.
+
+This indicates that increasing the number of turns or core length does not increase output because
+the magnetic flux does not reach the entire coil evenly,
+and the effective number of turns (the turns actually intersected by magnetic flux) is nearly the same.
+(Current is unknown, so back‑EMF cannot be calculated, but wind conditions are identical.)
+
+Items to verify
+
+Reconsider the number of turns and wiring method (currently all coils are in series) based on the target specifications.
+
+4. Ring‑Shaped Magnets
+Ring magnets are used to maintain a uniform distance between the generator magnets and the cogging‑reduction plate,
+but magnetic flux leakage occurs from the ring magnets.
+
+Items to verify
+
+Connect the coil‑side of the ring magnet with a yoke.
+
+On the opposite side of the coil:
+
+Bring the magnet as close as possible to the rotating shaft (magnetic material) to let the shaft function as a yoke,
+
+or connect it to the generator magnet or its yoke.
+
+This should reduce eddy‑current losses caused by leakage flux.
+
+## Supplement: About the Experimental Environment
+
+Ideally, specifications should be defined first and verification should follow accordingly.
+However, without a wind tunnel, the only available airflow source is a household electric fan,
+and the evaluation criteria are restricted by this limitation.
+
+## Request
+
+I have continued prototyping and testing with limited equipment and budget,
+but material procurement and financial constraints are making it difficult to continue.
+
+If anyone is interested in the structure or concept of this generator and
+would like to be involved within their own reasonable capacity,
+I would be sincerely grateful for your support.
+
+I welcome any support or cooperation within your comfortable capacity.
+As it is becoming increasingly difficult for me to continue this project alone, any assistance you can offer would be truly appreciated.
+Please feel free to contact me via GitHub Issues.
 
 ---
 
 ## About English Translation
-
-English text is generated using translation tools.  
+English text is generated using translation tools.
 Accuracy is not guaranteed.
 
 ---
 
-## Previous Experiments
-
-Also posted on Instagram.  
+## Past Experiments
+Also posted on Instagram.
 #micro_wind_turbine #mobile_wind_generator #home_wind_turbine
 
-
+---
 
 # マイクロ風力発電機（手回し発電機）
 DIY向け小型風力発電機に最適化した、コンパクトなアキシャルフラックス型永久磁石発電機です。
@@ -287,9 +362,57 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ---
 
-## ご支援・ご協力のお願い
+## Release15 – 考察と今後の検証方針
 
-材料や加工方法を無償にて情報提供いただけると助かります。  
+## 考察  
+Release15 では、この部分のみ追加・変更しています。  
+基本条件：家庭用扇風機「強」の風
+
+1. コギング抑制板  
+厚みを t13 に変更して容積を増やしたところ、コギングの抑制効果が大きくなり、発電量も増加した。
+
+検証したい内容  
+コギングがほぼ無くなる最小容積・最小重量を目指し、  
+材質・形状・容積を変更して試作・検証する。
+
+2. コイルのコア  
+「扇風機の風で回り始める」という条件下では、コギングを小さくするために  
+磁石とコギング抑制板の距離に差は生じたが、  
+ネオジム磁石 φ10t3 と φ16t2.5 の発電量は大きく変わらなかった。
+このことから、どちらもコアを通る磁束量が「ほぼ頭打ち（飽和）」になっていると考えられる。
+
+検証したい内容  
+- コアを太くして、磁束が通れる量（断面積）を増やす  
+- 可能であれば軽量化のため、円筒状のコアやファンシェイプコイル（扇形に近い形状）を検討する
+
+3. コイルの巻き数  
+コア23mm（330巻・19.9Ω）とコア60mm（1170巻・68.9Ω）では、  
+抵抗値や回転数は異なる（回転数は測定していないが、風速が同じため異なると推測）ものの、最高出力はほぼ同じだった。
+巻き数やコア長さを増やしても出力が増えないことから、磁束がコイル全体に均等に行き渡らず、 磁束が通っている巻き数（有効巻き数）がほぼ同じと考えられる。  
+（電流値が不明のため逆起電力は不明だが、扇風機の風条件は同じ）
+
+検証したい内容  
+仕様に合わせて、巻き数・結線方法（現状は全て直列）を再検討する。
+
+4. リング状磁石  
+コイルを挟んだ発電用磁石とコギング抑制板の距離を均一に保つために配置しているが、 リング状磁石から磁束が漏れている。
+
+検証したい内容  
+- リング状磁石のコイル側をヨークで接続する  
+- コイルと反対側は、回転軸（磁性体）に接触、またはできるだけ近づけて回転軸にヨークとしての機能を持たせる  
+- もしくは発電用磁石またはそのヨークに接続する  
+これにより、漏れ磁束によって発生する渦電流損失を抑制する。
+
+## 補足：検証環境について  
+本来であれば、まず仕様を決めて、それに向けて変更・検証を進めるべきですが、現状では風洞実験ができず、一定の風を発生させる装置は家庭用扇風機のみであり、検証基準がこの条件に制約されています。
+
+## お願い  
+ここまで、設備や資金が限られた中で試作・検証を続けてきましたが、特に材料の調達や資金面で継続が難しくなってきました。
+
+この発電機の構造や取り組みに興味を持ち、「自分の出来る範囲で関わってみたい」と感じていただける方がいれば、ご連絡いただけると大変ありがたく思います。
+
+無理のない範囲でのご支援・ご協力を歓迎しています。  
+私自身もそろそろ継続が難しくなってきたため、お力添えをいただければ本当に助かります。
 GitHub Issues にてご連絡ください。
 
 ---
