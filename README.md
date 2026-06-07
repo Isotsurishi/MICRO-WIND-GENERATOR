@@ -364,7 +364,6 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## Release15 – 考察と今後の検証方針
 
-## 考察  
 Release15 では、この部分のみ追加・変更しています。  
 基本条件：家庭用扇風機「強」の風
 
