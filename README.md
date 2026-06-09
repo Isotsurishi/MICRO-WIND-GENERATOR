@@ -1,4 +1,13 @@
 # Micro Wind Turbine (Hand‑Crank Generator)
+
+A DIY axial-flux permanent magnet generator optimized for low-speed micro wind turbines.
+
+
+## Keywords
+micro wind generator, axial flux generator, ferrite magnet generator,
+hand-crank generator, low-speed generator, DIY wind turbine,
+ferrite core, coil winding, magnetic flux, renewable energy experiment
+
 A compact axial-flux permanent magnet generator optimized for DIY small wind turbines.
 
 This project aims to develop a compact wind turbine capable of charging smartphones and 12V devices during emergencies.  
