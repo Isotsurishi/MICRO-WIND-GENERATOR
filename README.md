@@ -150,14 +150,18 @@ Analysis
 Only this section has been added or modified in Release15.
 Basic condition: Household electric fan set to “Strong”.
 
-1. Cogging‑Reduction Plate
+1. Cogging‑Suppression Plate
 Increasing the thickness to t13 increased the volume, which significantly improved cogging reduction and increased output.
 
 Items to verify
 
 Aim for minimum volume and minimum weight while achieving “almost zero cogging”.
-
 Prototype and test different materials, shapes, and volumes.
+
+In the current prototype, the cogging‑suppression plate is made by crushing a ferrite rod into particles and bonding them with epoxy resin. However, the epoxy creates gaps between the particles and the material becomes non-uniform, which likely prevents the ferrite from exhibiting its original permeability.
+
+Ideally, the cogging‑suppression plate should be made from sintered, continuous ferrite material. A continuous ferrite structure would allow higher magnetic performance, enabling a thinner plate while still achieving strong cogging suppression.
+
 
 2. Coil Core
 Under the condition of “starting rotation with the airflow of a household fan”,
@@ -382,6 +386,14 @@ Release15 では、この部分のみ追加・変更しています。
 検証したい内容  
 　コギングがほぼ無くなる最小容積・最小重量を目指し、  
 　材質・形状・容積を変更して試作・検証する。
+
+現在の試作品では、フェライトロッドを砕いた粒子をエポキシ樹脂で固めて
+コギング抑制板を作成しているが、
+エポキシ樹脂によって粒子間に空隙が生じ、材質も均一ではないため、
+フェライト本来の透磁率を十分に発揮できていない可能性がある。
+
+理想的には、焼結された連続フェライト材 を用いて抑制板を製作することで、
+より薄い板でも高いコギング抑制効果が得られると考えています。
 
 2. コイルのコア  
 「扇風機の風で回り始める」という条件下では、コギングを小さくするために  
