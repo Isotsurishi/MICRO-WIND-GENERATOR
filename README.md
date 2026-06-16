@@ -150,6 +150,39 @@ Analysis
 Only this section has been added or modified in Release15.
 Basic condition: Household electric fan set to “Strong”.
 
+Although the airflow from a household electric fan is not uniform and contains fluctuations, the typical wind speed of a “Strong” setting on a household fan is around 3–5 m/s.
+Therefore, this analysis assumes a wind speed of 5 m/s.
+
+Wind Power
+Pwind = 1/2 ρ A v³
+
+Efficiency Factors
+Maximum theoretical efficiency for any wind turbine (Betz limit): 59.3%
+
+Practical rotor efficiency: 0.30–0.45
+
+Mechanical + generator efficiency (including magnetic losses): 0.7–0.9
+
+From items 1–3, the best‑case overall efficiency is:
+
+0.593 × 0.45 × 0.9 ≒ 0.24 (about 24%)
+
+With 6 W of wind power:
+
+6 W × 0.24 ≒ 1.44 W (theoretical maximum output)
+
+| Item | Neodymium φ10×3 | Ferrite φ18×5 |
+| --- | --- | --- |
+| Output | approx. 0.5 W | approx. 0.35 W |
+| RPM | approx. 1200 rpm | approx. 1000 rpm |
+| Actual efficiency (based on 6 W wind) | approx. 8.3% | approx. 5.8% |
+| Ratio to theoretical max (24%) | 34.7% | 24.3% |
+| Magnetic flux density | 0.28–0.35 T | 0.10–0.15 T |
+
+Although the current prototype achieves a relatively small fraction of the theoretical maximum efficiency, improvements such as stronger magnets, a high‑permeability cogging‑suppression plate with higher saturation resistance, optimized coil wire diameter, optimized number of turns, and a more efficient propeller design could significantly increase performance.
+
+Small wind turbines typically achieve 5–15% efficiency, and the present prototype’s 5.8–8.3% falls well within this common range.
+
 1. Cogging‑Suppression Plate
 Increasing the thickness to t13 increased the volume, which significantly improved cogging reduction and increased output.
 
@@ -379,6 +412,46 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 Release15 では、この部分のみ追加・変更しています。  
 基本条件：家庭用扇風機「強」の風
+
+使用している扇風機
+　KOIZUMI KLF3018E9
+
+一定の風を発生する装置として上記扇風機の「強」の風として、扇風機の風のみで自然に回転を始めることを前提とします
+
+扇風機の羽根の直径は300㎜ですが、水平軸型発電機のプロペラの直径が320㎜なので、320㎜とします
+
+また、扇風機の風は均一ではなくムラがありますが、一般的な家庭用扇風機「強」の風速は 3〜5 m/s 程度であるため、本検証では 5 m/s と仮定します。
+
+風の持つ出力
+　Pwind＝1/2ρAｖ³　
+
+各効率について
+
+　１，どの構造の風車でも最大59.3％(Betz limit）
+
+　２，実際のロータ効率　0.3～0.45
+
+　３，機械損＋発電機損(磁力を含む)　0.7から0.9
+
+項目1～3より　一番効率が良い時を考えると
+
+　0.593×0.45×0.9≒0.24　　約24％
+
+　6W × 0.24 ≒ 1.44W（理論的な最大出力の目安）
+
+φ10t3のネオジム磁石、φ18ｔ5のフェライト磁石での実験結果より
+
+| 項目 | φ10×3 ネオジム磁石 | φ18×5 フェライト磁石 |
+| --- | --- | --- |
+| 出力 | 約 0.5 W | 約 0.35 W |
+| 回転数 | 約 1200 rpm | 約 1000 rpm |
+| 実際の効率（6W基準） | 約 8.3％ | 約 5.8％ |
+| 理論最大効率24％に対する割合 | 34.7％ | 24.3％ |
+| 磁束密度の目安 | 0.28〜0.35 T | 0.10〜0.15 T |
+
+現行の試作品では理論最大効率に対する割合は低いものの、強力な磁石、透磁率の高い飽和し難いコギング抑制板、コイル線径、コイル巻き数を調整し、効率の良いプロペラにすれば効率を上げることは十分可能と考えています　
+
+なお、小型風車では 5〜15％ 程度の効率が一般的とされており、本試作機の 5.8〜8.3％ はその範囲内にあります。
 
 1. コギング抑制板  
 厚みを t13 に変更して容積を増やしたところ、コギングの抑制効果が大きくなり、発電量も増加した。
