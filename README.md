@@ -307,7 +307,7 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 　扇風機の「弱」の風でも回転し始め、「強」の風で100V5Wの電球がほんのり点灯しました
 
 詳細は最新の実験結果（Release16・WEB版）  
-　　　https://isotsurishi.github.io/MICRO-WIND-GENERATO
+　　　https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 
 使用している扇風機
