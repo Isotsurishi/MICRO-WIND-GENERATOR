@@ -1,3 +1,20 @@
+## Overview (Search-Optimized Description)
+
+This repository contains a DIY Axial Flux Generator designed specifically for low RPM operation.
+It is a Single Phase Axial Flux Ferrite Magnet Generator intended for small wind turbines and
+hand‑crank power generation. The generator uses ferrite magnetic materials, cogging reduction
+plates, and an optimized air‑gap structure to achieve extremely low starting torque.
+
+This axial flux ferrite magnet generator is designed as a low‑RPM single‑phase AC generator for DIY wind turbine and hand‑crank applications.
+
+Key features:
+- Axial Flux Generator (Ferrite Magnet Type)
+- Single Phase AC Generator with 12 coils in series
+- Low RPM operation suitable for weak wind or hand‑crank use
+- DIY small wind turbine and emergency power applications
+- Cogging reduction plate for improved startup performance
+
+
 # Micro Wind Turbine (Hand‑Crank Generator)
 A compact axial‑gap permanent‑magnet generator optimized for DIY small wind turbines.
 
