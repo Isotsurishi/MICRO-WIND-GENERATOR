@@ -110,6 +110,8 @@ The effectiveness of the cogging‑suppression plate has been confirmed.
 By optimizing the core material, plate geometry, coil winding count, magnet selection, and propeller efficiency,
 the target generator performance may be achievable.
 
+I believe that single‑phase AC generators can sometimes be more advantageous than three‑phase AC generators in compact designs. Single‑phase generators allow the output coils to be connected entirely in series to increase voltage more easily, require fewer diodes for AC‑to‑DC conversion, and can use iron‑core coils that enable longer coil lengths. For these reasons, single‑phase AC generators may offer practical benefits over three‑phase generators in small‑scale applications.
+
 Details:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
@@ -294,6 +296,8 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 「コギングを抑制する磁性体の板」の効果が十分あることが確認できました
 
 必要な電圧などに合わせたコア、「コギングを抑制する磁性体の板」の材質や形状、他に、コイルの巻き数、磁石、プロペラを調整できれば、目的とする発電機も視野に入ってくると考えています
+
+単相交流発電機のほうが3相交流発電機より電圧を上げやすく（コイルをすべて直流に結線）、交流を直流に変換するダイオードの数も少なく、コイルにコアが有るコイルを使うことでコイル長を長くできるので、小型発電機においては、単相交流発電機のほうが3相交流発電機より有利な場合もあると考えています
 
 詳細は最新の実験結果  
 　　　https://isotsurishi.github.io/MICRO-WIND-GENERATOR
