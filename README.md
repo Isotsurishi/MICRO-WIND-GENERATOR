@@ -129,6 +129,14 @@ the target generator performance may be achievable.
 
 I believe that single‑phase AC generators can sometimes be more advantageous than three‑phase AC generators in compact designs. Single‑phase generators allow the output coils to be connected entirely in series to increase voltage more easily, require fewer diodes for AC‑to‑DC conversion, and can use iron‑core coils that enable longer coil lengths. For these reasons, single‑phase AC generators may offer practical benefits over three‑phase generators in small‑scale applications.
 
+In the current prototype, the “magnetic plate that suppresses cogging” works well with φ12 magnets, as verified in Release16. However, even with φ12 magnets, if the air gap is smaller than 5 mm, the magnet stops between the coils just like φ16 and φ19 magnets. If the air gap is larger than 5 mm, the magnet stops directly above the coil, similar to φ10 magnets.
+
+I believe this happens because the “magnetic plate that suppresses cogging” is made from two different materials: a ferrite plate and crushed antenna ferrite rods. As a result, the magnetic flux does not flow smoothly.
+
+If the “magnetic plate that suppresses cogging” can be made from a single material and its shape adjusted to suppress cogging, then φ10, φ16, and φ19 magnets may also become usable. In addition, it may allow the air gap of φ12 magnets to be reduced.
+
+By improving the “magnetic plate that suppresses cogging,” I believe it will be possible to reduce the air gap for φ12 magnets and increase the power generation.
+
 Details:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
@@ -315,6 +323,11 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 必要な電圧などに合わせたコア、「コギングを抑制する磁性体の板」の材質や形状、他に、コイルの巻き数、磁石、プロペラを調整できれば、目的とする発電機も視野に入ってくると考えています
 
 単相交流発電機のほうが3相交流発電機より電圧を上げやすく（コイルをすべて直流に結線）、交流を直流に変換するダイオードの数も少なく、コイルにコアが有るコイルを使うことでコイル長を長くできるので、小型発電機においては、単相交流発電機のほうが3相交流発電機より有利な場合もあると考えています
+
+現行の試作品で使用している「コギングを抑制する磁性体の板」ではφ12の磁石と相性が良いとRelease16で検証しましたが、φ12の磁石でもエアーギャップを5㎜より小さくするとφ16、φ19の磁石同様、磁石はコイルとコイルの間で停止し、5㎜より大きくするとφ10の磁石同様、磁石はコイルの一直線上に停止します
+これは「コギングを抑制する磁性体の板」が「フェライトプレート」と「アンテナ用フェライトロッドを砕いたもの」の二種類の材料からできており、磁束の流れが滑らかではないからだと考えています
+「コギングを抑制する磁性体の板」を一つの材料で、形状を調整することでコギングの抑制ができれば、φ10、φ16、φ19の磁石も使用可能となり、且つ、φ12の磁石のエアーギャップを小さくできると考えています
+「コギングを抑制する磁性体の板」を改良すればφ12の磁石での、エアーギャップを小さくするだけで発電量の増加を望めると考えています
 
 詳細は最新の実験結果  
 　　　https://isotsurishi.github.io/MICRO-WIND-GENERATOR
