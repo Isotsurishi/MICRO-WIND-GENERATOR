@@ -137,6 +137,26 @@ If the “magnetic plate that suppresses cogging” can be made from a single ma
 
 By improving the “magnetic plate that suppresses cogging,” I believe it will be possible to reduce the air gap for φ12 magnets and increase the power generation.
 
+---
+
+## According to the AI analysis, the current “cogging‑suppression magnetic plate” needs to be rebuilt using a single magnetic material and then properly tuned.
+
+### Effect on Output Power: Gap Reduction Works Quadratically
+
+In an axial‑flux generator, reducing the air gap dramatically increases the magnetic flux density (B) passing through the coil.
+Since electrical power (P) is the product of voltage and current — both proportional to magnetic flux density — the output increases roughly with the square of the magnetic force.
+
+• With a 4 mm air gap:
+The magnetic force increases by approximately 1.2×, raising the output from the current 0.40 W to about 0.60 W (1.5× improvement).
+
+• With a 3 mm air gap:
+The magnetic force increases by approximately 1.5×, and the theoretical output reaches 0.97 W (2.4× improvement), which is nearly enough to fully drive a 1 W light bulb at its rated brightness.
+
+| Air Gap | Increase in Magnetic Force | Estimated Output Power | Improvement |
+|--------|-----------------------------|-------------------------|-------------|
+| 4 mm   | ~1.2×                       | 0.40 W → ~0.60 W        | ~1.5×       |
+| 3 mm   | ~1.5×                       | 0.40 W → ~0.97 W        | ~2.4×       |
+
 Details:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
@@ -331,6 +351,27 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 「コギングを抑制する磁性体の板」を一種類の材料で、形状を調整することでコギングの抑制ができれば、φ10、φ16、φ19の磁石も使用可能となり、且つ、φ12の磁石のエアーギャップを小さくできると考えています
 
 「コギングを抑制する磁性体の板」を改良すればφ12の磁石での、エアーギャップを小さくするだけで発電量の増加を望めると考えています
+
+---
+
+## AIによる分析によれば、現在の「コギングを抑制する磁性体の板」は、単一の磁性材料で作り直し、適切に調整する必要があります。
+
+### 発電量への影響：ギャップを縮めると効果は“二乗”で効く
+
+アキシャル型発電機では、エアギャップを縮めるとコイルを貫く磁束密度（B）が劇的に増加します。  
+電力（P）は電圧と電流の掛け算であり、どちらも磁束密度に比例するため、出力は **磁力の二乗に比例して増加**します。
+
+• ギャップ 4 mm の場合：  
+磁力が約1.2倍となり、現在の 0.40 W から約 0.60 W（1.5倍）へ向上します。
+
+• ギャップ 3 mm の場合：  
+磁力が約1.5倍となり、理論上の出力は 0.97 W（2.4倍）に達します。  
+これは 1 W の電球をほぼ定格で光らせられるレベルです。
+
+| ギャップ | 磁力の増加率 | 推定出力 | 改善率 |
+|----------|---------------|-----------|---------|
+| 4 mm     | 約1.2倍        | 0.40 W → 約0.60 W | 約1.5倍 |
+| 3 mm     | 約1.5倍        | 0.40 W → 約0.97 W | 約2.4倍 |
 
 詳細は最新の実験結果  
 　　　https://isotsurishi.github.io/MICRO-WIND-GENERATOR
