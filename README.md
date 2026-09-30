@@ -65,11 +65,20 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ### Example results using φ12t3 neodymium magnets
 
-#### Voltage–Current Graph
-![Relationship between voltage and current](img/voltage_current_large.png)
+<div style="display: flex; gap: 20px;">
 
-#### Resistance–Power Generation Graph
-![Relationship between resistance and generated power](img/resistance_power_large.png)
+  <div style="flex: 1; text-align: center;">
+    <p><strong>Voltage–Current Graph</strong></p>
+    <img src="img/voltage_current_large.png" alt="Relationship between voltage and current" width="350">
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <p><strong>Resistance–Power Generation Graph</strong></p>
+    <img src="img/resistance_power_large.png" alt="Relationship between resistance and generated power" width="350">
+  </div>
+
+</div>
+
 
 Detailed data is available in the web version:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
@@ -292,11 +301,20 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ### φ12t3 のネオジム磁石を使って実験した結果の一例
 
-#### 電圧－電流グラフ
-![電圧と電流の関係](img/voltage_current_large.png)
+<div style="display: flex; gap: 20px;">
 
-#### 抵抗－発電量グラフ
-![抵抗と発電量の関係](img/resistance_power_large.png)
+  <div style="flex: 1; text-align: center;">
+    <p><strong>Voltage–Current Graph</strong></p>
+    <img src="img/voltage_current_large.png" alt="Relationship between voltage and current" width="350">
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <p><strong>Resistance–Power Generation Graph</strong></p>
+    <img src="img/resistance_power_large.png" alt="Relationship between resistance and generated power" width="350">
+  </div>
+
+</div>
+
 
 ※ 詳細データはWEB版に掲載  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
