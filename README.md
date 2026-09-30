@@ -63,6 +63,14 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 ## Experimental Results (Summary)
 
+### Example results using φ12t3 neodymium magnets
+
+#### Voltage–Current Graph
+![Relationship between voltage and current](img/voltage_current_large.png)
+
+#### Resistance–Power Generation Graph
+![Relationship between resistance and generated power](img/resistance_power_large.png)
+
 Detailed data is available in the web version:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
@@ -281,6 +289,14 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 ---
 
 ## 実験結果（概要）
+
+### φ12t3 のネオジム磁石を使って実験した結果の一例
+
+#### 電圧－電流グラフ
+![電圧と電流の関係](img/voltage_current_large.png)
+
+#### 抵抗－発電量グラフ
+![抵抗と発電量の関係](img/resistance_power_large.png)
 
 ※ 詳細データはWEB版に掲載  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
