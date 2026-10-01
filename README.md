@@ -79,8 +79,6 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
 </div>
 
-In addition to these factors, it has also been pointed out that increasing the magnet size, adding more coils, reducing the number of turns while using thicker wire, and enlarging the propeller diameter may further improve the power generation performance.
-
 Detailed data is available in the web version:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 
@@ -174,6 +172,8 @@ The magnetic force increases by approximately 1.5×, and the theoretical output 
 |--------|-----------------------------|-------------------------|-------------|
 | 4 mm   | ~1.2×                       | 0.40 W → ~0.60 W        | ~1.5×       |
 | 3 mm   | ~1.5×                       | 0.40 W → ~0.97 W        | ~2.4×       |
+
+In addition to these factors, it has also been pointed out that increasing the magnet size, adding more coils, reducing the number of turns while using thicker wire, and enlarging the propeller diameter may further improve the power generation performance.
 
 Details:  
 https://isotsurishi.github.io/MICRO-WIND-GENERATOR
