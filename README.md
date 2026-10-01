@@ -304,12 +304,12 @@ https://isotsurishi.github.io/MICRO-WIND-GENERATOR
 <div style="display: flex; gap: 20px;">
 
   <div style="flex: 1; text-align: center;">
-    <p><strong>Voltage–Current Graph</strong></p>
+    <p><strong>電圧–電流 グラフ</strong></p>
     <img src="img/voltage_current_large.png" alt="Relationship between voltage and current" width="350">
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <p><strong>Resistance–Power Generation Graph</strong></p>
+    <p><strong>抵抗–発電量 グラフ</strong></p>
     <img src="img/resistance_power_large.png" alt="Relationship between resistance and generated power" width="350">
   </div>
 
